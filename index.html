@@ -74,9 +74,9 @@
         <div class="menu__close" alt="Close the menu"><a href="#">X</a></div>
       </div>
     </nav>
-    <section id="welcome" class="welcome-section">
-      <div class="welcome-two-row-flex">
-        <div class="welcome-two-row-item-1">
+    <section id="welcome" class="section">
+      <div class="grid">
+        <div class="column1">
           <h3>Welcome</h3>
           <p>
             This guide is designed to introduce you to Canada’s Algorithmic
@@ -91,8 +91,17 @@
             platform and help develop more inclusive approaches to AI
             governance discourse.
           </p>
+          <h4>Using this guide</h4>
+          <p>
+            Canada's AIA is a messy assemblage of people, ideas, technical
+            objects, and bureaucratic processes. Instead of condensing that
+            complexity into a single narrative, this guide is organized into three
+            categories. Each category offers us a different way to think about the
+            AIA, which in turn offers us different ways to think about creative
+            interventions and engagements.
+          </p>
         </div>
-        <div class="welcome-two-row-item-2 bounding-box">
+        <div class="column2 bounding-box info-box">
           <h4>What's an AIA?</h4>
           <p>
             Algorithmic Impact Assessment, or AIA, refers to a broad group of
@@ -103,34 +112,21 @@
           </p>
         </div>
       </div>
-      <hr class="small-line" />
-      <h4>Using this guide</h4>
-      <p>
-        Canada's AIA is a messy assemblage of people, ideas, technical
-        objects, and bureaucratic processes. Instead of condensing that
-        complexity into a single narrative, this guide is organized into three
-        categories. Each category offers us a different way to think about the
-        AIA, which in turn offers us different ways to think about creative
-        interventions and engagements.
-      </p>
-      <div class="nav-flex bounding-box">
-        <h4>Choose a category to get started</h4>
-        <div class="nav-select-grid">
-          <a href="#platform" class="nav-select-grid-item">
-            <img src="Assets/Dropdown.svg" alt="Icon depicting a dropdown menu" class="section-nav-icon filter-blue" />
-            <h3>Platform</h3>
+      <div class="section-selector">
+        <h3 style="text-align: center;">Choose a category to get started</h3>
+        <br>
+        <div class="welcome-grid">
+          <a href="#platform" class="welcome-platform welcome-button">
+              <img src="Assets/Platform.svg" alt="Icon depicting a dropdown menu. The text below says 'Platform'" />
           </a>
-          <a href="#content" class="nav-select-grid-item">
-            <img src="Assets/Text.svg" alt="Icon depicting a text input field" class="section-nav-icon filter-blue" />
-            <h3>Content</h3>
+          <a href="#content" class="welcome-content welcome-button">
+              <img src="Assets/Content.svg" alt="Icon depicting a text input field. The text below says 'Content'" />
           </a>
-          <a href="#function" class="nav-select-grid-item">
-            <img src="Assets/Checkboxes.svg" alt="Icon depicting a checkbox input field"
-              class="section-nav-icon filter-blue" />
-            <h3>Function</h3>
+          <a href="#function" class="welcome-function welcome-button">
+              <img src="Assets/Function.svg" alt="Icon depicting a checkbox input. The text below says 'Function'" />
           </a>
         </div>
-      </div>
+    </div>
     </section>
     <hr class="section-divider" />
     <section id="platform" class="section">

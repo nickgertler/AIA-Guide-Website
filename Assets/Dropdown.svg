@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.38 110.22">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177 125">
   <defs>
     <style>
       .cls-1 {
@@ -8,7 +8,7 @@
 
       .cls-1, .cls-2 {
         fill: none;
-        stroke: #000000;
+        stroke: #000;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
@@ -21,12 +21,12 @@
   <g id="Icons">
     <g id="Dropdown">
       <g>
-        <rect class="cls-1" x="3.5" y="3.5" width="151.38" height="25.23"/>
-        <polygon class="cls-2" points="139.33 13.62 144.33 13.62 141.83 18.62 139.33 13.62"/>
-        <rect class="cls-1" x="29.88" y="28.73" width="125" height="19.23"/>
-        <rect class="cls-1" x="29.88" y="48.32" width="125" height="19.23"/>
-        <rect class="cls-1" x="29.88" y="67.9" width="125" height="19.23"/>
-        <rect class="cls-1" x="29.88" y="87.49" width="125" height="19.23"/>
+        <rect class="cls-1" x="3.5" y="3.5" width="170" height="28.84"/>
+        <polygon class="cls-2" points="156.03 15.06 161.64 15.06 158.84 20.78 156.03 15.06"/>
+        <rect class="cls-1" x="33.13" y="32.34" width="140.37" height="21.98"/>
+        <rect class="cls-1" x="33.13" y="54.74" width="140.37" height="21.98"/>
+        <rect class="cls-1" x="33.13" y="77.13" width="140.37" height="21.98"/>
+        <rect class="cls-1" x="33.13" y="99.52" width="140.37" height="21.98"/>
       </g>
     </g>
   </g>

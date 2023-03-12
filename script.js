@@ -36,32 +36,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* Change welcome navigation bar container on resize */
-const container = document.querySelector('.nav-select-grid'); // Select the container element
-const content = document.querySelector('.nav-select-grid-item')
-const contentText = document.querySelector('.nav-select-grid-item h3')
-
-function checkContainerWidth() {
-  const width = window.innerWidth; // Get the width of the viewport
-
-  if (width < 516) { // Check if the width is less than 516px. This seems to be the breakpoint.
-    container.classList.add('rows');
-    content.classList.add('rows');
-    contentText.classList.add('rows');
-  } else {
-    container.classList.remove('rows');
-    content.classList.remove('rows');
-    contentText.classList.remove('rows');
-  }
-}
-
-// Call the function initially to set the correct class
-checkContainerWidth();
-
-// Call the function on resize
-window.addEventListener('resize', checkContainerWidth);
-
-
 /* Control nav bar */
 const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');

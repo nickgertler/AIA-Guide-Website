@@ -1,4 +1,7 @@
 /*|| GENERAL STYLES*/
+  html {
+    font-size: calc(12px + 0.390625vw);
+  }
   body {
     margin: 0;
     padding: 0;
@@ -22,12 +25,12 @@
   }
 
   h3 { /* Used for sub-section headers */
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
   }
 
   h4 { /* Used for captions */
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin: 0;
     padding-bottom: .15em;
     text-decoration: underline;
@@ -35,12 +38,13 @@
 
   h5 { /* Used for small headings */
     margin: 0;
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
-  p {
-    font-size: 1.25em;
+  p { /* has mobile style to remove justification */
+    font-size: 1rem;
     margin-top: 0;
+    text-align: justify;
   }
 
   blockquote { /* has mobile style. removes justification */
@@ -60,7 +64,7 @@
   }
 
   .note { /* has mobile style */
-    font-size: 1em;
+    font-size: .9rem;
     font-style: italic;
     margin-top: -1em;
     padding: 0px;
@@ -68,7 +72,7 @@
   }
 
   ul {
-    font-size: 1.25em;
+    font-size: 1rem;
     list-style-type: square;
     padding-left: 1em;
     margin: 0;
@@ -77,7 +81,7 @@
   ol {
     list-style: none;
     counter-reset: item;
-    font-size: 1.25em;
+    font-size: 1rem;
   }
   ol li {
     counter-increment: item;
@@ -139,11 +143,11 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: 60% 40%;
+      grid-template-columns: 55% 5% 40%;
       grid-template-rows: auto;
       justify-items: start;
       align-items: start;
-      grid-gap: 20px;
+      grid-gap: 1em;
     }
     @media screen and (max-width: 600px) {
       .grid {
@@ -159,7 +163,36 @@
       grid-column: 1;
     }
     .column2 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .section-selector {
+      margin-left: -3.5%;
+      margin-right: -3.5%;
+    }
+    .welcome-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(20px, 1fr));
+      grid-template-rows: auto;
+      justify-items: center;
+      align-items: center;
+      grid-gap: 1rem;
+      height: fit-content;
+    }
+    .welcome-button {
+      width: 100%;
+      max-width: 300px;
+    }
+    .welcome-platform {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .welcome-content {
       grid-column: 2;
+      grid-row: 1;
+    }
+    .welcome-function {
+      grid-column: 3;
       grid-row: 1;
     }
   /*|| Title styles*/
@@ -199,13 +232,13 @@
 
     #title-part-one {
       /* Applies to "Get to Know Canada's" */
-      font-size: 1.75em;
+      font-size: 1.75rem;
       font-weight: 400;
     }
 
     #title-part-two h1 {
       /* Applies to text "Algorithmic Impact Assessment". */
-      font-size: 3em;
+      font-size: 3rem;
       line-height: 1em;
       text-transform: uppercase;
       font-family: "myriad-pro", Helvetica, sans-serif;
@@ -300,7 +333,7 @@
       margin-left: -1em;
     }
     .menu-content li {
-      font-size: 20px;
+      font-size: 1.15rem;
       line-height: 1.75em;
     }
     .menu-content h4 {
@@ -315,7 +348,7 @@
       position: absolute;
       top: 1.5em;
       right: 2em;
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
     .menu__close a {
       text-decoration: none;
@@ -339,62 +372,6 @@
     }
 
     /*|| Welcome section styles */
-    .nav-flex { /* Controls nav box flex */ 
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: center;
-      border: 0.5em solid #0061a6;
-      padding: 1em;
-      overflow: hidden;
-      gap: 1em;
-    }
-
-    .nav-select-grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      column-gap: 1em;
-      row-gap: 2em;
-      align-items: start;
-      justify-items: left;
-      width: 100%;
-    }
-    .nav-select-grid.rows { /* triggered via js. sets params for row grid */
-      display: grid;
-      column-gap: 1em;
-      row-gap: 2em;
-      align-items: start;
-      justify-items: center;
-      width: 100%;
-    }
-    .nav-select-grid-item {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: .5em;
-      max-width: 200px;
-    }
-    .nav-select-grid-item.row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-items: center;
-      gap: 0%;
-    }
-    .nav-select-grid h3 {
-      color: #0061a6;
-      line-height: 0;
-      margin-top: 0.5em;
-      font-size: calc(1.25em + 1.5vmax); /* 1st number ends as minimum font size. Same as default "p". */
-    }
-    .nav-select-grid.row h3 {
-      padding-bottom: .5em;
-    }
-    .section-nav-icon { /* Styles the SVG nav icons in the welcome section */
-      height: calc(1.25em + 1.5vmax); /* Same as font-size for .nav-select-grid h3 */
-    }
     .bounding-box {
       border: 0.5em solid #0061a6;
       padding: 1em;
@@ -407,7 +384,7 @@
       margin: 0;
     }
   /*|| Section styles */
-    .welcome-section {
+    .section {
       position: relative;
       padding-left: 10%;
       padding-right: 10%;
@@ -416,8 +393,7 @@
     .section-header {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
-      justify-items: center;
+      align-items: center;
       gap: .5em;
       margin-bottom: 1em;
     }
@@ -446,32 +422,11 @@
       max-width: fit-content;
       margin-bottom: 1em;
     }
-
     .demo-box { /* Has mobile style to set 100% */
       max-width: none;
       min-width: fit-content;
       width: calc(100px + 5em);
       box-shadow: -8px 4px 10px -10px rgba(0,0,0,0.39);
-    }
-
-    .welcome-two-row-flex {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: flex-start;
-      justify-content: flex-start;
-      column-gap: 4em;
-    }
-
-    .welcome-two-row-item-1 {
-      order: 1;
-      min-width: 40vw;
-      flex: 1.5;
-    }
-
-    .welcome-two-row-item-2 {
-      order: 2;
-      min-width: calc(1em + 30vw);
-      flex: 1;
     }
     .inline-list p {
       margin-bottom: 0;
@@ -568,9 +523,9 @@
         background-position: center left 70vw; /* moves background image to 30% of screen */
       }
 
-      /*p {
+      p {
         text-align: left;
-      }*/
+      }
 
       .title-text {
         position: fixed;
@@ -579,7 +534,7 @@
 
       #title-part-one {
         /* Applies to "Get to Know Canada's" */
-        font-size: 1.25em;
+        font-size: 1.25rem;
         font-weight: 400;
       }
 
@@ -629,6 +584,7 @@
     }
 
 /*|| Utilities */
-  .filter-blue {
-    filter: invert(16%) sepia(98%) saturate(3328%) hue-rotate(192deg) brightness(92%) contrast(102%);
-  }
+  .filter-black {
+    filter:brightness(0) saturate(100%);
+    -webkit-filter:brightness(0) saturate(100%);
+}
