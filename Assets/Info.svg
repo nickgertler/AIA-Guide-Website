@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.96 60.96">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 57">
   <defs>
     <style>
       .cls-1 {
-        fill: #000000;
-      }
-
-      .cls-2 {
         stroke-width: 5px;
       }
 
-      .cls-2, .cls-3 {
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-3 {
         fill: none;
-        stroke: #000000;
         stroke-linecap: round;
         stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+        stroke-miterlimit: 10;
       }
 
       .cls-3 {
@@ -25,9 +29,9 @@
   <g id="Icons">
     <g id="Info">
       <g>
-        <circle class="cls-3" cx="30.48" cy="30.48" r="26.98"/>
-        <polyline class="cls-2" points="27.42 24.64 30.95 24.64 30.95 46.01 34.48 46.01"/>
-        <ellipse class="cls-1" cx="30.24" cy="16.72" rx="3.76" ry="3.71"/>
+        <circle class="cls-3" cx="28.5" cy="28.5" r="25"/>
+        <polyline class="cls-1" points="25.66 23.09 28.93 23.09 28.93 42.89 32.21 42.89"/>
+        <ellipse class="cls-2" cx="28.28" cy="15.75" rx="3.49" ry="3.44"/>
       </g>
     </g>
   </g>
