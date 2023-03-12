@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.88 127.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <g id="Text_input" data-name="Text input">
+      <g>
+        <path class="cls-1" d="M273.38,32.09H59.32M3.5,74.04V32.09H43.46m243.92,.5v62.43H59.32M3.5,86.12v8.9H43.46"/>
+        <polygon class="cls-1" points="59.32 109 69.23 109 69.23 123.64 31.57 123.64 31.57 109 43.46 109 43.46 18.13 31.57 18.13 31.57 3.5 69.23 3.5 69.23 18.13 59.32 18.13 59.32 109"/>
+        <line class="cls-1" x1="80.56" y1="83.4" x2="112.62" y2="83.4"/>
+        <line class="cls-1" x1="129.41" y1="83.4" x2="161.48" y2="83.4"/>
+        <line class="cls-1" x1="180.47" y1="83.4" x2="212.54" y2="83.4"/>
+      </g>
+    </g>
+  </g>
+</svg>

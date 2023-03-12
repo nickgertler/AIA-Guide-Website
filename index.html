@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Get to Know Canada's AIA</title>
+  <link rel="stylesheet" href="https://use.typekit.net/whw6zez.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Assets/favicon.svg" />
+</head>
+
+<body>
+  <section id="title">
+    <div id="logo">
+      <div class="title-text">
+        <h1 id="title-part-one">Get to Know Canada's</h1>
+        <div id="title-part-two">
+          <h1>Algorithmic</h1>
+          <h1>Impact</h1>
+          <h1>Assessment</h1>
+        </div>
+        <p>Created by <a href="https://nickgertler.ca">Nick Gertler</a></p>
+        <p><a href="https://nog.url.lol/mozfest">About this project</a></p>
+      </div>
+      <a href="#welcome" class="scroll-down">
+        <svg viewBox="0 0 24 24">
+          <path fill="white"
+            d="M12 17.27l-6.18-6.18a.996.996 0 0 1 1.41-1.41L12 14.44l4.78-4.78a.996.996 0 1 1 1.41 1.41L12 17.27z" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  <div id="main-content">
+    <nav>
+      <div class="menu-icon">
+        <div class="menu-icon__line"></div>
+        <div class="menu-icon__line"></div>
+        <div class="menu-icon__line"></div>
+      </div>
+      <div class="menu">
+        <div class="menu-content">
+          <h4>Table of Contents</h4>
+          <ol>
+            <li>
+              <a href="#Platform">Platform</a>
+
+              <ol>
+                <li>
+                  <a href="#GitHub">GitHub</a>
+
+                  <ol>
+                    <li>
+                      <a href="#Frameworks">Languages and Frameworks</a>
+                    </li>
+                    <li><a href="#Changes">Making Changes</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#Walkthrough">Walkthrough</a>
+
+                  <ol>
+                    <li><a href="#Context">Context and Landing Pages</a></li>
+                    <li><a href="#Sections">Sections</a></li>
+                    <li><a href="#Scoring">Scoring</a></li>
+                    <li><a href="#Inputs">Questions and Input Types</a></li>
+                    <li><a href="#Import">Import/Export</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li><a href="#Content">Content</a></li>
+            <li><a href="#Function">Function</a></li>
+          </ol>
+        </div>
+        <div class="menu__close" alt="Close the menu"><a href="#">X</a></div>
+      </div>
+    </nav>
+    <section id="welcome" class="welcome-section">
+      <div class="welcome-two-row-flex">
+        <div class="welcome-two-row-item-1">
+          <h3>Welcome</h3>
+          <p>
+            This guide is designed to introduce you to Canada’s Algorithmic
+            Impact Assessment—or AIA.
+          </p>
+          <p>
+            The AIA takes the form of an open-source questionnaire platform,
+            which is available via the Government of Canada on
+            <a href="https://github.com/canada-ca/aia-eia-js">GitHub</a>. The
+            goal of this guide is to give communities, scholars, governments,
+            and you—dear reader—the context and tools needed to build on this
+            platform and help develop more inclusive approaches to AI
+            governance discourse.
+          </p>
+        </div>
+        <div class="welcome-two-row-item-2 bounding-box">
+          <h4>What's an AIA?</h4>
+          <p>
+            Algorithmic Impact Assessment, or AIA, refers to a broad group of
+            processes for defining, evaluating, and mitigating risks or harms
+            posed by algorithmic systems—including AI systems. The concept
+            borrows from "impact assessments" in other domains, including
+            privacy impact assessments and environmental impact assessments.
+          </p>
+        </div>
+      </div>
+      <hr class="small-line" />
+      <h4>Using this guide</h4>
+      <p>
+        Canada's AIA is a messy assemblage of people, ideas, technical
+        objects, and bureaucratic processes. Instead of condensing that
+        complexity into a single narrative, this guide is organized into three
+        categories. Each category offers us a different way to think about the
+        AIA, which in turn offers us different ways to think about creative
+        interventions and engagements.
+      </p>
+      <div class="nav-flex bounding-box">
+        <h4>Choose a category to get started</h4>
+        <div class="nav-select-grid">
+          <a href="#platform" class="nav-select-grid-item">
+            <img src="Assets/Dropdown.svg" alt="Icon depicting a dropdown menu" class="section-nav-icon filter-blue" />
+            <h3>Platform</h3>
+          </a>
+          <a href="#content" class="nav-select-grid-item">
+            <img src="Assets/Text.svg" alt="Icon depicting a text input field" class="section-nav-icon filter-blue" />
+            <h3>Content</h3>
+          </a>
+          <a href="#function" class="nav-select-grid-item">
+            <img src="Assets/Checkboxes.svg" alt="Icon depicting a checkbox input field"
+              class="section-nav-icon filter-blue" />
+            <h3>Function</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="platform" class="section">
+      <div class="grid">
+        <div class="column1">
+          <div class="section-header">
+            <img src="Assets/Dropdown.svg" alt="Icon depicting a dropdown menu" />
+            <h2>Platform</h2>
+          </div>
+          <p>
+            Let’s set aside the content of AIA questionnaire and the policy
+            environment the AIA is meant to be used in. We can think of
+            Canada’s AIA as an open-source policy platform.
+          </p>
+        </div>
+        <div class="section-resources bounding-box column2">
+          <h4>Section Resources</h4>
+          <ul>
+            <li>
+              <a href="https://open.canada.ca/aia-eia-js/?lang=en">View the live AIA</a>
+            </li>
+            <li>
+              <a href="https://github.com/canada-ca/aia-eia-js">View the source code on GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="small-line column1" />
+      <div class="grid">
+        <div class="column1">
+          <h3 id="GitHub">GitHub</h3>
+          <p>
+            The
+            <a href="https://github.com/canada-ca/aia-eia-js">GitHub repository</a>
+            for the AIA contains the source code for the AIA itself, as well
+            as a few useful developer tools. This repository is the actual
+            development environment for the live AIA, which that means that
+            anyone can participate in the development of the platform.
+          </p>
+          <h4 id="Frameworks">Languages and Frameworks</h4>
+          <p>
+            The main AIA platform is built using the Vue JavaScript framework.
+            Versions have been built using
+            <a href="https://github.com/canada-ca/aia-eia.git">Python and Django</a>,
+            <a href="https://github.com/canada-ca/aia-eia-net.git">C# and .NET</a>, and pure
+            <a href="https://github.com/canada-ca/aia-eia-js.git">JavaScript</a>. When the project was in development,
+            early versions even hosted
+            the AIA as a
+            <a
+              href="https://docs.google.com/spreadsheets/d/1CcQJ-YlT_2nqTlrrEsXy0_Rs6gLqCdgMK8tL9kMZX9E/edit#gid=0">spreadsheet</a>!
+          </p>
+          <p>
+            The questionnaire portion of the AIA is built using a modified
+            version of <a href="https://surveyjs.io">SurveyJS</a>—a
+            JavaScript library for building surveys and questionnaires. One
+            particularly useful feature of SurveyJS is that it provides a
+            <a href="https://surveyjs.io/create-survey/">web-based visual editor</a>
+            for building and modifying questionnaires.
+          </p>
+          <p>
+            The repo also includes a python
+            <a href="https://github.com/canada-ca/aia-eia-js/blob/master/survey-json-to-csv.py">script for converting
+              AIA surveys from JSON files to CSV</a>. This can be a useful way to visualize the entire questionnaire,
+            as well as the weights assigned to specific questions.
+            <a href="Resources/survey-enfr.csv" download>Click here</a>
+            to download a sample CSV based on the most recent questionnaire.
+          </p>
+          <p class="note">
+            Note: the script provided in the repo is setup for use on Windows
+            and uses backslashes for file paths. To run the script on a Mac or
+            another UNIX-based system, replace the backslashes with slashes,
+            or download this
+            <a href="Resources/survey-json-to-csv-unix.py" download>pre-modified version</a>.
+          </p>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>A note on licenses</h4>
+          <p>
+            The AIA is released as open-source under an
+            <a href="https://github.com/canada-ca/aia-eia-js/blob/master/LICENSE">MIT License</a>. This license grants
+            anyone the right to use, redistribute, and
+            modify the AIA, so long as any derivatives also include a copy of
+            the MIT license.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h4 id="Changes">Making changes</h4>
+          <p style="margin-bottom: 0.5em">
+            There are a several ways you can start working with and modifying
+            Canada's AIA platform.
+          </p>
+          <div class="inline-list">
+            <p>
+              <span class="bold-caption">If you're comfortable working with code:</span>
+              <a href="https://github.com/canada-ca/aia-eia-js.git">Clone</a>
+              or fork the
+              <a href="https://github.com/canada-ca/aia-eia-js">AIA-EIA-JS GitHub Repo</a>.
+              <br />
+              The repo also includes<a href="https://github.com/canada-ca/aia-eia-js/wiki/Running-the-Demo">
+                instructions</a>
+              for running a local version of the AIA in Docker or Node.
+            </p>
+            <br />
+            <p>
+              <span class="bold-caption">For a more visual approach:</span>
+              You can load the questionnaire into
+              <a href="https://surveyjs.io/create-free-survey">SurveyJS’s visual editor</a>.
+            </p>
+            <ol style="margin-top: 0; padding-left: 2em; margin-bottom: 0">
+              <li>
+                Open
+                <a href="https://surveyjs.io/create-free-survey">SurveyJS’s free survey builder</a>
+                in your web browser and navigate to the "JSON Editor" tab.
+              </li>
+              <li>
+                Copy the code from the
+                <a href="https://github.com/canada-ca/aia-eia-js/blob/master/src/survey-enfr.json">JSON file on this
+                  page</a>
+                into the SurveyJS JSON Editor, then navigate back to the
+                "Designer" tab.
+              </li>
+              <li>The survey should now be loaded and editable.</li>
+            </ol>
+            <br />
+            <p class="note">
+              Note: Canada’s AIA uses a modified version of the SurveyJS
+              library, so not all features of the survey are reflected using
+              this method. In particular, impact and mitigation scores can’t
+              be viewed this way.
+            </p>
+            <br />
+            <p>
+              <span class="bold-caption">For a more versatile approach:</span>
+              You can directly download the questionnaire as a
+              <a href="https://github.com/canada-ca/aia-eia-js/blob/master/src/survey-enfr.json">JSON file</a>
+              or a
+              <a href="Resources/survey-enfr.csv" download>CSV (spreadsheet)</a>.
+            </p>
+          </div>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>Additional resources</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/canada-ca/aia-eia-js/forks?activity_threshold=5y&amp;include=active%2Carchived%2Cinactive%2Cnetwork&amp;page=1&amp;sort_by=stargazer_counts">View
+                "forked" copies of the AIA</a>
+            </li>
+            <li>
+              <a href="https://search.open.canada.ca/opendata/?collection=aia&amp;page=1&amp;sort=date_modified+desc">Download
+                completed AIAs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="small-line column1" />
+      <div class="grid">
+        <div class="column1">
+          <h3 id="Walkthrough">Walkthrough</h3>
+
+          <p>
+            If the AIA is a platform, what are it’s features?
+            <br>
+            We can think about this by walking through the platform itself.
+          </p>
+
+          <h4 id="Context">Context and Landing Pages</h4>
+
+          <p>
+            When you open the
+            <a href="https://open.canada.ca/aia-eia-js/?lang=en">live version</a>
+            of the AIA, the first thing you’ll notice is the landing page.
+            This page provides context for the AIA tool, including how it is
+            supposed to be completed, who is expected to completed it, and
+            what to do after it’s completed. This page is the bridge between
+            the AIA platform and its regulatory context. It expresses a vision
+            of how the AIA is supposed to be used, and how it’s expected to
+            function as a regulatory tool.
+          </p>
+
+          <p>
+            After clicking the "Start your assessment" button, you’ll be
+            brought to the beginning of the questionnaire itself. The first
+            page is, again, descriptive. It provides a summarized description
+            of the tool itself, as well as instructions for actually using the
+            tool.
+          </p>
+
+          <h4 id="Sections">Sections</h4>
+
+          <p>
+            The platform is divided into two major sections, and several
+            subsections. We can refer to the major sections as the "impact
+            section" and the "mitigation section," because questions in each
+            section contribute to different scores. Each of these sections has
+            subsections, which focus on particular aspects of the system. The
+            dropdown menu at the top of the page allows you to quickly jump
+            between these subsections.
+          </p>
+
+          <h4 id="Scoring">Scoring</h4>
+
+          <p>
+            You’ve probably noticed an (initially) green bar at the bottom of
+            your screen. This bar displays your score as you progress through
+            the AIA. There are 3 scores displayed: a raw impact score, a
+            mitigation score, and "current score". The "current score" is raw
+            impact score minus 15% <em>if</em> the system scores at least 80%
+            of the maximum mitigation score.
+          </p>
+
+          <p>
+            The colour of the scoring bar corresponds to the impact level
+            displayed on the left of bar. The bar turns green for impact level
+            1, blue for level 2, yellow for level 3, and red for level 4.
+          </p>
+
+          <p>
+            In this case, impact levels correspond to requirements set out in
+            the Canadian Treasury Board Secretariat’s
+            <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592">Directive on Automated
+              Decision-Making</a>.
+          </p>
+
+          <h4 id="Inputs">Questions and Input Types</h4>
+
+          <p>
+            At the heart of the AIA platform are the questions themselves. I
+            cover the content of the AIA in a
+            <a href="#content">different section</a>, so let’s consider the
+            different kinds of question and input types that are available—and
+            how they <em>impact</em> (get it) the AIA.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h5>Info buttons</h5>
+
+          <p>
+            Info buttons appear as an "i" in a circle next to some questions.
+            When clicked, they bring up an overlay providing additional
+            context for the question. These info boxes are the
+            <a href="https://github.com/canada-ca/aia-eia-js/pull/890">newest feature</a>
+            to be added to the AIA platform.
+          </p>
+        </div>
+        <div class="column2">
+          <!-- Info button demo box goes here -->
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h5>Radio buttons</h5>
+
+          <p>
+            Radio buttons are a standard HTML form element that allow the user
+            to only select one option from a group. In the Government of
+            Canada’s AIA, they’re mostly used for "yes/no" questions or other
+            binary choices. Questions linked to radio buttons can contribute
+            to the AIA’s scoring.
+          </p>
+        </div>
+        <div class="column2">
+          <div class="bounding-box info-box demo-box">
+            <h4>Radio buttons!</h4>
+            <input type="radio" id="option 1" name="radio-demo" checked />
+            <label for="option 1">Option 1!</label><br />
+            <input type="radio" id="option 2" name="radio-demo" />
+            <label for="css">Option 2!</label>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h5>Checkboxes</h5>
+
+          <p>
+            Checkboxes are a standard HTML form element that allow the user to
+            select one <em>or more</em> options from a group. In the
+            Government of Canada’s AIA, they’re mostly used to either itemize
+            which features apply to a system in question. This allows for more
+            flexibility than a radio button, while still capturing answers in
+            a structured way that can be quantified. Questions linked to
+            checkboxes can contribute to the AIA’s scoring.
+          </p>
+        </div>
+        <div class="column2">
+          <div class="bounding-box info-box demo-box">
+            <h4>Checkboxes!</h4>
+            <input type="checkbox" id="option 1" name="checkbox-demo" />
+            <label for="option 1">Option 1!</label><br />
+            <input type="checkbox" id="option 2" name="checkbox-demo" checked />
+            <label for="css">Option 2!</label>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h5>Dropdown lists</h5>
+
+          <p>
+            Dropdowns are a standard HTML form element that allow the user to
+            select a single option from a list. In the Government of Canada’s
+            AIA, they’re mostly used either when the list of options is very
+            long (selecting a department), or instead of a radio button when
+            option names are more verbose. Questions linked to dropdown lists
+            can contribute to the AIA’s scoring.
+          </p>
+        </div>
+        <div class="column2">
+          <div class="bounding-box info-box demo-box">
+            <label for="dropdown-demo">
+              <h4>Dropdown!</h4>
+            </label>
+
+            <select name="dropdown-demo" id="dropdown-demo">
+              <option value="option 1">Option 1</option>
+              <option value="saab">Option 2</option>
+              <option value="mercedes">Option 3</option>
+              <option value="audi">Option 4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h5>Free-text fields</h5>
+
+          <p>
+            Free-text fields allow the user to type anything they want. There
+            are two kinds of free-text fields on the AIA platform. In the
+            Government of Canada’s AIA, Single-line text fields are primarily
+            used to collect discrete pieces of information—like the project
+            title and the respondent’s name. Multi-line text fields are
+            primarily used to let users provide further explanations about a
+            response, or to describe a particular feature of a system.
+          </p>
+
+          <p class="note">
+            Note: Questions linked to free-text fields of any kind
+            <em>cannot</em> contribute to the AIA’s scoring.
+          </p>
+        </div>
+        <div class="column2">
+          <div class="bounding-box info-box demo-box">
+            <label for="text-demo">
+              <h4>Free text!</h4>
+            </label>
+            <textarea id="story" name="story" rows="2" cols="20" placeholder="Try typing here"
+              style="resize: none"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h4 id="Import">Import/Export</h4>
+
+          <p>
+            One feature to note on the top of the first page is the "Upload
+            JSON File" button. This is accompanied by an info box, informing
+            users that the AIA platform and the Government of Canada don’t
+            store any information that users submit.
+          </p>
+
+          <h5>Exporting responses</h5>
+
+          <p>
+            Once you begin the questionnaire, an additional "Save" button
+            appears. This allows you to download a JSON file with your
+            responses up to that point.
+          </p>
+
+          <p>
+            After an AIA is completed, you can also download responses as a
+            PDF in either English or French.
+          </p>
+
+          <h5>Importing responses</h5>
+
+          <p>
+            Clicking "Upload JSON File" allows you to re-upload one of these
+            saved JSON files and load those answers back into the survey. This
+            allows you both to resume your own questionnaire, or to view and
+            modify a questionnaire completed by someone else (like the
+            <a href="https://search.open.canada.ca/opendata/?collection=aia&amp;page=1&amp;sort=date_modified+desc">completed
+              AIAs</a>
+            uploaded to Canada’s Open Government Portal).
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="content" class="section">
+      <div class="grid">
+        <div class="column1">
+          <div class="section-header">
+            <img src="Assets/Text.svg" alt="Icon depicting a text input field" />
+            <h2>Content</h2>
+          </div>
+          <p>
+            Canada’s AIA is a platform, and platforms need content. Let’s
+            consider the AIA’s intended context, and the content of the
+            current questionnaire.
+          </p>
+        </div>
+        <div class="section-resources bounding-box column2">
+          <h4>Section Resources</h4>
+          <ul>
+            <li>
+              <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592">Directive on Automated
+                Decision-Making</a>
+            </li>
+            <li>
+              <a
+                href="https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html">Live
+                Government of Canada AIA</a>
+            </li>
+            <li>
+              <a href="https://search.open.canada.ca/opendata/?collection=aia&amp;page=1&amp;sort=date_modified+desc">Completed
+                AIA questionnaires (Open Government)</a>
+            </li>
+            <li>
+              <a
+                href="https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai.html">
+                Exploring the future of responsible AI in government
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="small-line column1" />
+      <div class="grid">
+        <div class="column1">
+          <h3 id="DirADM">Directive on Automated Decision-Making</h3>
+          <p>
+            Canada’s AIA primarily exists in relation to the Treasury Board
+            Secretariat’s <em>Directive on Automated Decision-Making</em>. The
+            Directive guides most Canadian federal government agencies and
+            departments' use of ADM (automated decision-making) systems.
+            The Directive doesn't apply to "national security
+            systems" or to the work of most agents of parliament, like
+            Elections Canada and the Office of the Privacy Commissioner.
+          </p>
+          <p>
+            Directives are a specific kind of policy in the Treasury Board’s
+            <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=13616#cha3">policy instrument hierarchy</a>.
+            Directives are meant to explain <em>how</em> a policy objective
+            should be met. They're also mandatory policy within the
+            Canadian government, but they
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3722192">don't create any actionable
+              rights</a>
+            outside of government.
+          </p>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>What’s the Treasury Board?</h4>
+          <p>The <a href="https://en.wikipedia.org/wiki/Treasury_Board_of_Canada">Treasury Board of Canada
+              Secretariat</a> (TBS for short) is a central branch of the Canadian federal government. TBS’s role is
+            largely the management and administration of the Canadian public service itself. For example, TBS oversees
+            the federal access to information system. TBS is also home to Canada’s Office of the Chief Information
+            Officer, who developed and oversee the Directive on Automated Decision-Making and the AIA.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h4>Defining "ADM"</h4>
+
+          <p>The Directive <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#appA">defines</a> "Automated
+            Decision System" as:</p>
+
+          <blockquote>
+            <p>Includes any technology that either assists or replaces the judgement of human decision-makers. These
+              systems draw from fields like statistics, linguistics, and computer science, and use techniques such as
+              rules-based systems, regression, predictive analytics, machine learning, deep learning, and neural nets.
+            </p>
+          </blockquote>
+
+          <p>AIAs are often discussed in the context of artificial intelligence (AI). But as the TBS’s definition
+            demonstrates, AIAs often focus on how the algorithm is used, rather than how it works. The TBS definition
+            includes systems that use "AI" methods, but it’s mostly concerned with whether or not the system is used to
+            replace human judgment.</p>
+          <h4>Coming Into Force and Consultations</h4>
+
+          <p>The Directive was first formally introduced in 2019. It came into force a year later, in April 2020, and
+            only applies to systems implemented or substantially changed after that date. But both the Directive and
+            Canada’s AIA can <a
+              href="https://medium.com/code-for-canada/responsible-ai-in-the-government-of-canada-a-sneak-peek-973727477bdf">trace
+              their origins</a> to 2016, with the drafting of a government white paper on "Responsible Artificial
+            Intelligence in the Government of Canada."A more recent version of that white paper is <a
+              href="https://docs.google.com/document/d/1Sn-qBZUXEUG4dVk909eSg5qvfbpNlRhzIefWPtBwbxY/edit">still
+              available on Google Docs</a>.</p>
+
+          <p>Early parts of this policy project were conducted in an exceptionally open process. Early drafts of both
+            the white paper and the AIA were hosted on Google Docs, and they were shared for comment via Twitter and the
+            Government’s GCCollab. The project team also led consultations with internal departments and external
+            experts. In principle, the open drafts were open to public comment, but in practice the process mostly
+            engaged experts. No public consultations were held.</p>
+
+          <h4>Principles of Administrative Law</h4>
+
+          <p>The Directive is primarily concerned with ensuring that automated decision-making systems are implemented
+            in a way that is "compatible with core principles of administrative law," including "transparency,
+            accountability, legality, and procedural fairness."</p>
+
+          <p>Understanding the Directive’s grounding in administrative law is fundamental to understanding the
+            Directive. These principles are reflected in the design of the AIA platform, and in the AIA’s questionnaire.
+            They also inform the design of the procedures and remedies established by the Directive, like its focus on
+            having a human-in-the-loop (accountability/procedural fairness) and on disclosure of automated decisions
+            (transparency).</p>
+
+          <p>It bears noting that (as Teresa Scassa <a
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3722192">demonstrates</a>) just because the goal
+            is to translate administrative law principles to an automated decision-making context doesn’t mean that
+            these principles can be straightforwardly translated.</p>
+        </div>
+      </div>
+      <hr class="small-line column1" />
+      <div class="grid">
+        <div class="column1">
+          <h3 id="Procedure">Procedure</h3>
+          <p>Enough preamble. How does the Directive itself actually work? What’s the policy system that Canada’s AIA
+            was
+            designed to be a part of? And what role does the AIA play in that system?</p>
+          <p>We can think about the Directive having 3 stages: <strong>design</strong>, <strong>implementation</strong>,
+            and <strong>post-implementation</strong>. The design and implementation stages both share the same basic
+            procedure.</p>
+        </div>
+      </div>
+      <div class="procedure-list">
+        <div class="grid">
+          <div class="column1">
+            <h4>General Procedure</h4>
+            <p style="margin-bottom: -1em;">The basic process laid out in the Directive is:</p>
+            <div class="procedure-description">
+              <ol>
+                <li>Fill out an AIA</li>
+                <li>Determine the impact level</li>
+              </ol>
+              <p>Depending on the final score of the AIA, the platform assigns the system an impact level from
+                1 to 4. This corresponds with the impact levels defined in <a
+                  href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#appB">Appendix B</a> of the
+                Directive:</p>
+              <div class="inline-list">
+                <ul>
+                  <li><strong>Level 1 (Low):</strong> "Level I decisions will often lead to impacts that are reversible
+                    and
+                    brief."</li>
+                  <li><strong>Level 2 (Moderate):</strong> "Level II decisions will often lead to impacts that are
+                    likely
+                    reversible
+                    and short-term."</li>
+                  <li><strong>Level 3 (High):</strong> "Level III decisions will often lead to impacts that can be
+                    difficult to
+                    reverse, and are ongoing."</li>
+                  <li><strong>Level 4 (Very High):</strong> "Level IV decisions will often lead to impacts that are
+                    irreversible, and
+                    are perpetual."</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column2 bounding-box info-box">
+            <h4>Who fills out an AIA?</h4>
+            <p>The AIA is generally completed by the team implementing an ADM system, but the AIA questionnaire
+              is designed to ensure that teams have to consult with other groups within the government—like their
+              department’s legal team and the system’s developers.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="column1">
+            <div class="procedure-description">
+              <ol>
+                <li>Determine impact level requirements</li>
+              </ol>
+              <div class="inline-list">
+                <p>Each impact level corresponds to a different set of requirements, which are established in Appendix C
+                  of
+                  the Directive. The requirements are divided into 7 categories:</p>
+                <ul>
+                  <li>Peer review</li>
+                  <li>Notice</li>
+                  <li>Human-in-the-loop for decisions</li>
+                  <li>Explanation requirement</li>
+                  <li>Training</li>
+                  <li>Contingency planning</li>
+                  <li>Approval for the system to operate</li>
+                </ul>
+              </div>
+              <br>
+              <p>Within each category, the specific requirements scale proportionally with the system’s impact
+                level. For example, level 1 and 2 systems don’t require a human-in-the-loop at all. Whereas level
+                3 and 4 system require “specific human intervention points” throughout the decision-making
+                process, and the final decision for systems at these impact levels must be made by a human.</p>
+              <br>
+              <p class="note">Note: It isn’t possible to “fail” the algorithmic impact assessment, and the Directive
+                itself doesn’t disallow systems of any kind. The requirements for level 4 systems are quite onerous,
+                however, and they are designed to strongly disincentivize very high risk systems.</p>
+              <ol>
+                <li>Implement requirements</li>
+              </ol>
+              <p>The final step of the process is, of course, to actually implement the Directive’s requirements. This
+                includes specific requirements based on the system’s impact level, as well as several baseline
+                requirements for all systems.</p>
+              <br>
+              <p>This step changes the most depending on what stage in the development process the system is at (more on
+                that in a second). As we discuss in the <a href="#Function">Function section</a>, one of the ways that
+                the AIA can function is by encouraging best practices and de-risking a system. If a team doesn’t want to
+                comply with a requirement, they can try to modify the system to lower its impact level instead.</p>
+            </div>
+          </div>
+          <div class="column2 bounding-box info-box" style="padding-top: 1em;">
+            <h4>Read the full requirements</h4>
+
+            <p>The full list of requirements set out by the directive is split between general requirements (<a
+                href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#cha6">Section 6</a>) and impact level
+              specific requirements (<a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#appC">Appendix
+                C</a>).</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <br>
+          <h4>What systems are in scope of the Directive?</h4>
+
+          <p>Before applying any of the Directive’s procedures and requirements, public servants need to determine if
+            the system in question is in scope of the Directive to begin with.</p>
+          <div class="inline-list">
+            <p>Broadly speaking, the Directive applies to “any system, tool, or statistical models used to recommend or
+              make an administrative decision about a client.”(<a
+                href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#cha5"> § 5.2</a>) But there are additional
+              limitations to the Directive’s scope:</p>
+            <ul>
+              <li>The Directive currently only applies to external-facing systems. ADM systems that are only used
+                internally by the government, for the government, are currently exempt.</li>
+              <li>The Directive doesn’t apply to “national security systems.&quot;</li>
+              <li>The Directive doesn’t apply to systems that aren’t in production, like systems operating in test
+                environments.</li>
+              <li>The Directive only applies to systems developed or procured after the Directive came into force on
+                April 1, 2020.</li>
+            </ul>
+          </div>
+          <br>
+          <h4>Design Stage</h4>
+
+          <p>The first application of the Directive’s procedure begins in the design stage of a project. Once the scope
+            and general design of the system are established, an initial AIA needs to be completed before the system
+            goes into production.</p>
+
+          <p>The design-stage AIA is not published or made public. Instead, these initial AIAs do two things:</p>
+
+          <ol>
+            <li>They guide the implementation of risk mitigation procedures, based on responses to the mitigation
+              section of the AIA.</li>
+            <li>Based on the impact level, they guide what requirements need to be put in place. Some requirements—like
+              peer review—need to take place before the system goes live. While others—like having a
+              human-in-the-loop—may need to be planned for and built into the system itself.</li>
+          </ol>
+
+          <h4>Implementation</h4>
+
+          <p>The Directive’s procedure is applied for a second time after the system is built, but before it goes live.
+            Assuming that no major changes have been made to the system, it is unlikely that any new requirements will
+            be introduced during the implementation stage. Instead, the AIA is completed again to validate the
+            design-stage AIA and to reflect any changes to the system during the development process.</p>
+
+          <p>The final AIA, completed at the implementation stage, then must be published on <a
+              href="https://search.open.canada.ca/opendata/?collection=aia&amp;page=1&amp;sort=date_modified+desc">Canada’s
+              Open Government Portal</a>.</p>
+
+          <h4>Post-Implementation</h4>
+
+          <p>Many of the Directive’s requirements create ongoing obligations. For example, the Directive requires that
+            processes be developed for ongoing monitoring of a system’s compliance and decision outcomes.</p>
+
+          <p>The AIA may also need to be updated after the system goes live. Any time that the system’s functionality
+            substantially changes, or the scope of the automated decision changes, the AIA needs to be updated.</p>
+        </div>
+      </div>
+      <hr class="small-line column1" />
+      <div class="grid">
+        <div class="column1">
+          <h3 id="Questionnaire">AIA Questionnaire</h3>
+          <p>The Directive on Automated Decision-Making provides a framework and procedure for regulating ADMs in the
+            government of Canada. But as we now know, that procedure relies heavily on “impact levels” established by
+            the AIA. So what is the AIA actually assessing, and how are the Directive’s impact levels determined?</p>
+          <h4>Questionnaire Overview</h4>
+          <p>We can break down the AIA questionnaire itself into two sections—risk and mitigation. Each section has
+            several sub-sections, and each sub-section contains one or more questions to which the applicant must
+            provide a response.</p>
+          <p>Based on the responses provided by the applicant, the system calculates two scores: a “raw impact score”
+            based on the risk section, and a “mitigation score” based on the mitigation section. The raw impact score
+            draws on questions about how the system works and what decision is going to be automated, while the
+            mitigation score measures what practices have been put in place to mitigate those risks.</p>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>Read the full description</h4>
+          <p>This section is intended to be a digestible overview of the AIA’s questions and scoring system. If you’re
+            interested in learning more, TBS have put together an excellent detailed description on the <a
+              href="https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html">AIA’s
+              landing page</a>.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h4>Impact and Mitigation Scores</h4>
+          <p>The system calculates the raw impact and mitigation scores based on the value assigned to each question in
+            their section. The “riskier” an answer is, the higher its score. Ultimately, the score assigned to any given
+            question is arbitrary and determined by the Treasury Board.</p>
+          <p>Reminder: Questions associated with <a href="#Scoring">“free-text” inputs</a> can’t contribute to the AIA’s
+            scoring.</p>
+          <p>The risk section has there are a total of 48 questions, and a total possible maximum raw impact score of
+            107. Within the risk section, the “Data” “Impact” sub-sections contain the most questions and contribute the
+            most to the raw impact score. Accordingly, they contribute the most to the overall score calculated for the
+            risk section.</p>
+          <p>The mitigation section has a total of 33 questions, and a maximum section score of 45. There are only two
+            mitigation sub-sections: Consultations” and “De-risking and mitigation measures.’’ 31 of the 33 mitigation
+            questions are in the later section.</p>
+          <h4>Calculating Current Score</h4>
+          <p>The raw impact score and mitigation score are used to calculate an overall score. This score is referred to
+            as the “current score” in the AIA. The final impact level is based on how close the final “current score” is
+            to the maximum possible score. A higher current score means a higher impact level, which in turn means more
+            stringent requirements (per the Directive).</p>
+          <div class="inline-list">
+            <p>The current score doesn’t just combine the raw impact score and mitigation score. Instead, the current
+              score is <a
+                href="https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html#toc2-1">based
+              </a> on the following formula:</p>
+            <ul>
+              <li>“If the mitigation score is less than 80% of the maximum attainable mitigation score, the current
+                score is equal to the raw impact score.”</li>
+              <li>“If the mitigation score is 80% or more than the maximum attainable mitigation score, 15% is deducted
+                from the raw impact score to yield the current score.”</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>Question Weights</h4>
+          <p>There’s no straightforward way to view the weight assigned to each question. TBS provide a per-sub-section
+            breakdown of there scores here. We can view a full list of weights using the AIA’s JSON to CSV
+            converter.<br /><a href="Resources/survey-enfr.csv" download>Click here to download a CSV based on the most
+              recent questionnaire.</a></p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <br>
+          <h4>Risk Section Overview</h4>
+          <table>
+            <thead>
+              <tr>
+                  <th class="first-column">Sub-sections of the Risk Section</th>
+                  <th>Sub-Section Description</td>
+                  <th>Example Question or Prompt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>Project</td>
+                  <td>Description of the project, motivation for automating the decision, and “high-level risk indicators for the project.”</td>
+                  <td>Is the project within an area of intense public scrutiny (e.g. because of privacy concerns) and/or frequent litigation?</td>
+              </tr>
+              <tr>
+                  <td>System</td>
+                  <td>“Capabilities of the system (that is, image recognition, risk assessment)”</td>
+                  <td>Please check which of the following capabilities apply to your system.</td>
+              </tr>
+              <tr>
+                  <td>Algorithm</td>
+                  <td>“Transparency of the algorithm, whether it is easily explained”</td>
+                  <td>The algorithmic process will be difficult to interpret or to explain</td>
+              </tr>
+              <tr>
+                  <td>Decision</td>
+                  <td>“Classification of the decision being automated (that is, health services, social assistance, licensing)”</td>
+                  <td>Does the decision pertain to any of the categories below (check all that apply):</td>
+              </tr>
+              <tr>
+                  <td>Impact</td>
+                  <td>“Duration, reversibility and area impacted (freedom, health, economy or environment)”</td>
+                  <td>Will the system be replacing a decision that would otherwise be made by a human?</td>
+              </tr>
+              <tr>
+                  <td>Data</td>
+                  <td>What type of data is being used, and where the data came from.</td>
+                  <td>Will the system require the analysis of unstructured data to render a recommendation or a decision?</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <h4>Mitigation Section Overview</h4>
+          <table>
+            <thead>
+              <tr>
+                <th class="first-column">Mitigation sub-section</th>
+                <th>Sub-Section Description</th>
+                <th>Example Question</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="first-column">Consultation</td>
+                <td>“Internal and external stakeholders consulted, such as privacy and legal experts”</td>
+                <td>Will you be engaging with any of the following groups?</td>
+              </tr>
+              <tr>
+                <td class="first-column">De-risking and mitigation measures</td>
+                <td>Processes to ensure data quality, procedural fairness, and privacy of personal information.</td>
+                <td>Will you design and build security and privacy into your systems from the concept stage of the
+                  project?</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="function" class="section">
+      <div class="section-header">
+        <img src="Assets/Checkboxes.svg" alt="Icon depicting a checkbox input field" />
+        <h2>Function</h2>
+      </div>
+      <div class="grid">
+        <div class="column1">
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

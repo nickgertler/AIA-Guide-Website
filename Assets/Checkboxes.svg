@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.74 126.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <g id="Checkboxes">
+      <g>
+        <line class="cls-1" x1="73.11" y1="30" x2="174.24" y2="30"/>
+        <line class="cls-1" x1="73.11" y1="96.18" x2="174.24" y2="96.18"/>
+        <rect class="cls-1" x="3.5" y="3.5" width="53" height="53"/>
+        <rect class="cls-1" x="3.5" y="69.68" width="53" height="53"/>
+      </g>
+    </g>
+  </g>
+</svg>

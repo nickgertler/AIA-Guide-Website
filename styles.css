@@ -1,0 +1,634 @@
+/*|| GENERAL STYLES*/
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "myriad-pro-semi-condensed", Helvetica, sans-serif;
+  }
+
+  #main-content { /* Everything after the title */
+    position: relative;
+    height: 100%;
+    overflow: auto;
+  }
+
+  h1 {
+    color: #ffffff;
+    margin: 0;
+  }
+
+  h2 { /* Used for section headers */
+    font-size: 5vmax;
+    margin: 0;
+  }
+
+  h3 { /* Used for sub-section headers */
+    font-size: 2em;
+    margin: 0;
+  }
+
+  h4 { /* Used for captions */
+    font-size: 1.5em;
+    margin: 0;
+    padding-bottom: .15em;
+    text-decoration: underline;
+  }
+
+  h5 { /* Used for small headings */
+    margin: 0;
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1.25em;
+    margin-top: 0;
+  }
+
+  blockquote { /* has mobile style. removes justification */
+    margin-top: -.75em;
+    max-width: 70%;
+    text-align: justify;
+    font-style: italic;
+  }
+
+  label {
+    font-size: inherit;
+  }
+
+  .bold-caption {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .note { /* has mobile style */
+    font-size: 1em;
+    font-style: italic;
+    margin-top: -1em;
+    padding: 0px;
+    max-width: 80%;
+  }
+
+  ul {
+    font-size: 1.25em;
+    list-style-type: square;
+    padding-left: 1em;
+    margin: 0;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: item;
+    font-size: 1.25em;
+  }
+  ol li {
+    counter-increment: item;
+  }
+
+  ol li:before {
+    content: counters(item, '.', decimal) '. ';
+  }
+
+  .roman-list ol li:before {
+    content: counters(item, '.', lower-roman) '. ';
+  }
+
+  a:link {
+    color: #0061a6;
+  }
+
+  a:visited {
+    color: #0061a6;
+  }
+
+  a:hover {
+    color: #0061a6;
+    opacity: .9;
+  }
+
+  a:active {
+    color: #0061a6;
+    opacity: .8;
+  }
+
+  hr {
+    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .small-line { /* small style for left-aligned horizontal lines */
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .small-line-grid { /* for use inside the grid layout */
+    width: 67%;
+    margin-left: 0;
+  }
+
+  .section-divider { /* large style for horizontal lines */
+    width: 80%;
+  }
+
+/*|| Layout */
+  /*|| Grid styles */
+    .section {
+      position: relative;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 2.5%;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: auto;
+      justify-items: start;
+      align-items: start;
+      grid-gap: 20px;
+    }
+    @media screen and (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .column2 {
+        grid-column: 1!important;
+        grid-row: auto!important;
+        min-width: 90%; /* Accounts for right-side padding */
+      }
+    }
+    .column1 {
+      grid-column: 1;
+    }
+    .column2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  /*|| Title styles*/
+    #title {
+      height: 95vh; /* 95% of viewport height. Allows the content area to peak through on the bottom. */
+      background-color: #0061a6;
+    }
+
+    #logo {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-image: url("/Assets/Network_Map.svg");
+      background-repeat: no-repeat;
+      background-position: center left 60vw; /* Positions it in the middle and in the right 40% of the screen */
+      background-size: auto 100%;
+      opacity: 100;
+    }
+
+    .title-text {
+      position: relative;
+      padding-left: 5%;
+      padding-top: 15%;
+    }
+
+    .title-text p {
+      /* Applies to created by and about text below the box */
+      color: #ffffff;
+      line-height: 0.5em;
+      font-weight: bold;
+      margin-top:10px;
+    }
+
+    .title-text a {
+      color: #ffffff;
+    }
+
+    #title-part-one {
+      /* Applies to "Get to Know Canada's" */
+      font-size: 1.75em;
+      font-weight: 400;
+    }
+
+    #title-part-two h1 {
+      /* Applies to text "Algorithmic Impact Assessment". */
+      font-size: 3em;
+      line-height: 1em;
+      text-transform: uppercase;
+      font-family: "myriad-pro", Helvetica, sans-serif;
+    }
+
+    #title-part-two {
+      /* Defines the box in the title */
+      width: fit-content;
+      border: 0.5em solid white;
+      padding: 1vw;
+      padding-right: 2vw;
+    }
+
+    /* Title arrow */
+      .scroll-down {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4em;
+        height: auto;
+        cursor: pointer;
+        animation: bounce 8s infinite;
+        animation-delay: 8s;
+      }
+
+      @keyframes bounce {
+        0%,
+        10%,
+        20% {
+          transform: translateY(0) translateX(-50%);
+        }
+        5%,
+        15% {
+          transform: translateY(-8px) translateX(-50%);
+        }
+        25%,
+        100% {
+          transform: translateY(0) translateX(-50%);
+        }
+      }
+
+  /*|| Nav menu styles */
+    .menu-icon {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      position: fixed;
+      top: 5%;
+      right: 5%;
+      z-index: 998;
+      opacity: 100;
+    }
+
+    .menu-icon__line {
+      width: 100%;
+      height: 2.5px;
+      background-color: #0061a6;
+      margin: 3px 0;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 25%;
+      height: 100%;
+      background-color: white;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      padding-top: 3em;
+      padding-left: 2em;
+      z-index: 998;
+      box-shadow: -8px 6px 20px -10px rgba(0,0,0,0.39);
+      -webkit-transition: transform 0.3s ease-in-out;
+      -moz-transition: transform 0.3s ease-in-out;
+      -ms-transition: transform 0.3s ease-in-out;
+      -o-transition: transform 0.3s ease-in-out;
+      overflow-y: scroll;
+    }
+
+    .menu-content {
+      position: relative;
+      margin-left: -1em;
+    }
+    .menu-content li {
+      font-size: 20px;
+      line-height: 1.75em;
+    }
+    .menu-content h4 {
+      text-decoration: none;
+      padding-left: 2em;
+    }
+    .menu--open {
+      transform: translateX(0);
+    }
+
+    .menu__close {
+      position: absolute;
+      top: 1.5em;
+      right: 2em;
+      font-size: 1.5em;
+    }
+    .menu__close a {
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .menu {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+      }
+      .menu-icon {
+        background-color: white;
+        padding-left: 5px;
+        margin-right: -5%;
+        padding-right: 5%;
+        opacity: 80%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+    }
+
+    /*|| Welcome section styles */
+    .nav-flex { /* Controls nav box flex */ 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+      border: 0.5em solid #0061a6;
+      padding: 1em;
+      overflow: hidden;
+      gap: 1em;
+    }
+
+    .nav-select-grid {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      column-gap: 1em;
+      row-gap: 2em;
+      align-items: start;
+      justify-items: left;
+      width: 100%;
+    }
+    .nav-select-grid.rows { /* triggered via js. sets params for row grid */
+      display: grid;
+      column-gap: 1em;
+      row-gap: 2em;
+      align-items: start;
+      justify-items: center;
+      width: 100%;
+    }
+    .nav-select-grid-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: .5em;
+      max-width: 200px;
+    }
+    .nav-select-grid-item.row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      gap: 0%;
+    }
+    .nav-select-grid h3 {
+      color: #0061a6;
+      line-height: 0;
+      margin-top: 0.5em;
+      font-size: calc(1.25em + 1.5vmax); /* 1st number ends as minimum font size. Same as default "p". */
+    }
+    .nav-select-grid.row h3 {
+      padding-bottom: .5em;
+    }
+    .section-nav-icon { /* Styles the SVG nav icons in the welcome section */
+      height: calc(1.25em + 1.5vmax); /* Same as font-size for .nav-select-grid h3 */
+    }
+    .bounding-box {
+      border: 0.5em solid #0061a6;
+      padding: 1em;
+      box-shadow: -8px 6px 20px -10px rgba(0,0,0,0.39);
+    }
+    .bounding-box h4 {
+      text-decoration: none;
+    }
+    .bounding-box p {
+      margin: 0;
+    }
+  /*|| Section styles */
+    .welcome-section {
+      position: relative;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 2.5%;
+    }
+    .section-header {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-items: center;
+      gap: .5em;
+      margin-bottom: 1em;
+    }
+    .section-header img {
+      height: 5vmax; /* Same as h2 */
+    }
+    .section-header-flex {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2em;
+    }
+    .section-sub-header { /* has mobile style */
+      order: 1;
+      max-width: 40vw;
+      flex: 1.5;
+    }
+    .section-resources { /* has mobile style */
+      order: 2;
+      max-width: fit-content;
+      min-width: 150px;
+      flex: 1;
+    }
+    .info-box { /* has mobile style. sets max-width to 100% */
+      max-width: fit-content;
+      margin-bottom: 1em;
+    }
+
+    .demo-box { /* Has mobile style to set 100% */
+      max-width: none;
+      min-width: fit-content;
+      width: calc(100px + 5em);
+      box-shadow: -8px 4px 10px -10px rgba(0,0,0,0.39);
+    }
+
+    .welcome-two-row-flex {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      column-gap: 4em;
+    }
+
+    .welcome-two-row-item-1 {
+      order: 1;
+      min-width: 40vw;
+      flex: 1.5;
+    }
+
+    .welcome-two-row-item-2 {
+      order: 2;
+      min-width: calc(1em + 30vw);
+      flex: 1;
+    }
+    .inline-list p {
+      margin-bottom: 0;
+    }
+    .inline-list ol {
+      padding-left: 2em;
+      margin-bottom: 0;
+    }
+    .inline-list ul {
+      padding-left: 2em;
+      max-width: 80%;
+      text-align: justify;
+    }
+    .procedure-list {
+      counter-reset: descriptive;
+    }
+    .procedure-description {
+      padding-left: 1em;
+    }
+    .procedure-description ol li {
+      counter-increment: descriptive;
+      font-weight: bold;
+      padding-top: 1em;
+    }
+   .procedure-description ol li:before {
+      content: counters(descriptive, '.', decimal) '. ';
+    }
+    .procedure-description p, .procedure-description ul { /* applies to all child elements */
+      margin-left: 1.25em;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      max-width: 80%;
+      text-align: justify;
+    }
+    .procedure-description p {
+      max-width: 80%;
+      padding-bottom: .15em;
+    }
+    .procedure-description ul {
+      max-width: 70%;
+    }
+    .procedure-description ol {
+      padding-left: 0!important;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    table {
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px solid black;
+    }
+    th, td { /* has mobile style */
+      padding: 1em;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #0061a61d;
+    }
+    th {
+      background-color: #0061a6;
+      text-align: left;
+      color: white
+    }
+    td {
+      border-bottom: 1px solid #0061a6;
+      overflow: auto;
+    }
+    table {
+      column-width: 2px;
+    }
+    .first-column {
+      width: 7em;
+      max-width: 15%;
+    }
+
+/*|| Mobile styles */
+  /* Tablet size*/
+    @media (min-width: 480px) and (max-width: 620px) {
+      #logo {
+        background-position: center left 70vw; /* moves background image to 30% of screen */
+      }
+    }
+
+  /* Phone size */
+    @media (max-width: 600px) {
+      th, td {
+        padding: .5em;
+      }
+      #logo {
+        background-position: center left 70vw; /* moves background image to 30% of screen */
+      }
+
+      /*p {
+        text-align: left;
+      }*/
+
+      .title-text {
+        position: fixed;
+        padding-top: 15%;
+      }
+
+      #title-part-one {
+        /* Applies to "Get to Know Canada's" */
+        font-size: 1.25em;
+        font-weight: 400;
+      }
+
+      #title-part-two h1 {
+        /* Applies to text "Algorithmic Impact Assessment". */
+        font-size: 2em;
+        line-height: 75%;
+        margin: 0.25em;
+      }
+
+      #title-part-two {
+        /* Defines the box in the title */
+        width: fit-content;
+        border: 0.25em solid white;
+        padding-right: 5%;
+      }
+      .section-sub-header {
+        max-width: 100%;
+      }
+      .section-resources {
+        max-width: 100%;
+      }
+      .info-box {
+        max-width: 100%;
+      }
+      .note {
+        max-width: 100%;
+      }
+      .demo-box {
+        max-width: 100%;
+        min-width: fit-content;
+        width: 100%;
+      }
+      blockquote {
+        text-align: left;
+      }
+    }
+
+  /* Tiny size */
+    @media (max-width: 350px) {
+      #logo {
+        background-image: none;
+      }
+      p {
+        text-align: left;
+      }
+    }
+
+/*|| Utilities */
+  .filter-blue {
+    filter: invert(16%) sepia(98%) saturate(3328%) hue-rotate(192deg) brightness(92%) contrast(102%);
+  }
