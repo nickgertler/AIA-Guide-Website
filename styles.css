@@ -208,7 +208,7 @@
       position: fixed;
       height: 100%;
       width: 100%;
-      background-image: url("/assets/network_map.svg");
+      background-image: url("/Assets/network_map.svg");
       background-repeat: no-repeat;
       background-position: center left 60vw; /* Positions it in the middle and in the right 40% of the screen */
       background-size: auto 100%;
