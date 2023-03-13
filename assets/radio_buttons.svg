@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177 125">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <g id="Radio_Buttons" data-name="Radio Buttons">
+      <g>
+        <line class="cls-2" x1="73.09" y1="30" x2="173.5" y2="30"/>
+        <line class="cls-2" x1="73.09" y1="95" x2="173.5" y2="95"/>
+        <ellipse class="cls-2" cx="30.29" cy="30" rx="26.79" ry="26.5"/>
+        <ellipse class="cls-1" cx="30.29" cy="30" rx="14.89" ry="14.73"/>
+        <ellipse class="cls-2" cx="30.29" cy="95" rx="26.79" ry="26.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
