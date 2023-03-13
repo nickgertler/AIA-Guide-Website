@@ -183,6 +183,9 @@
       width: 100%;
       max-width: 300px;
     }
+    .welcome-button img {
+      box-shadow: 0px 6px 20px -10px rgba(0,0,0,0.39);
+    }
     .welcome-platform {
       grid-column: 1;
       grid-row: 1;
@@ -205,7 +208,7 @@
       position: fixed;
       height: 100%;
       width: 100%;
-      background-image: url("/Assets/Network_Map.svg");
+      background-image: url("/assets/network_map.svg");
       background-repeat: no-repeat;
       background-position: center left 60vw; /* Positions it in the middle and in the right 40% of the screen */
       background-size: auto 100%;
