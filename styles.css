@@ -507,50 +507,46 @@
     }
 
 /*|| Mobile styles */
-  /* Tablet size*/
+  /* Tablet size
     @media (min-width: 480px) and (max-width: 620px) {
       #logo {
-        background-position: center left 70vw; /* moves background image to 30% of screen */
+        background-position: center left 70vw;
       }
-    }
+    }*/
 
   /* Phone size */
     @media (max-width: 600px) {
       th, td {
         padding: .5em;
       }
-      #logo {
-        background-position: center left 70vw; /* moves background image to 30% of screen */
-      }
-
       p {
         text-align: left;
       }
 
-      .title-text {
+      #logo {
+        background-position: center left 70vw;
+      } 
+      /*.title-text {
         position: fixed;
         padding-top: 15%;
       }
 
       #title-part-one {
-        /* Applies to "Get to Know Canada's" */
         font-size: 1.25rem;
         font-weight: 400;
       }
 
       #title-part-two h1 {
-        /* Applies to text "Algorithmic Impact Assessment". */
         font-size: 2em;
         line-height: 75%;
         margin: 0.25em;
       }
 
       #title-part-two {
-        /* Defines the box in the title */
         width: fit-content;
         border: 0.25em solid white;
         padding-right: 5%;
-      }
+      }*/
       .section-sub-header {
         max-width: 100%;
       }
@@ -572,19 +568,3 @@
         text-align: left;
       }
     }
-
-  /* Tiny size */
-    @media (max-width: 350px) {
-      #logo {
-        background-image: none;
-      }
-      p {
-        text-align: left;
-      }
-    }
-
-/*|| Utilities */
-  .filter-black {
-    filter:brightness(0) saturate(100%);
-    -webkit-filter:brightness(0) saturate(100%);
-}
