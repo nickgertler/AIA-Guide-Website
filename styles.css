@@ -149,7 +149,7 @@
       align-items: start;
       grid-gap: 1em;
     }
-    @media (max-width: 600px), (orientation: portrait), only screen and (max-device-width: 480px) {
+    @media (max-width: 600px), (orientation: portrait), (hover: none) {
       .grid {
         grid-template-columns: 1fr;
       }
@@ -358,7 +358,7 @@
       text-decoration: none;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px), (hover: none) {
       .menu {
         width: 100%;
         height: 100%;
@@ -519,7 +519,7 @@
     }*/
 
   /* Phone size */
-    @media (max-width: 600px), (orientation: portrait), only screen and (min-width: 390px) {
+    @media (max-width: 600px), (orientation: portrait), (hover: none) {
       th, td {
         padding: .5em;
       }
