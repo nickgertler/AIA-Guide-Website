@@ -519,7 +519,7 @@
     }*/
 
   /* Phone size */
-    @media (max-width: 600px), (orientation: portrait), only screen and (max-device-width: 480px) {
+    @media (max-width: 600px), (orientation: portrait), only screen and (min-width: 390px) {
       th, td {
         padding: .5em;
       }
