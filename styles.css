@@ -149,7 +149,7 @@
       align-items: start;
       grid-gap: 1em;
     }
-    @media screen and (max-width: 600px) {
+    @media (max-width: 600px), (orientation: portrait) {
       .grid {
         grid-template-columns: 1fr;
       }
@@ -519,7 +519,7 @@
     }*/
 
   /* Phone size */
-    @media (max-width: 600px) {
+    @media (max-width: 600px), (orientation: portrait) {
       th, td {
         padding: .5em;
       }
