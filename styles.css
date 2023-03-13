@@ -1,6 +1,6 @@
 /*|| GENERAL STYLES*/
   html {
-    font-size: calc(12px + 0.390625vw);
+    font-size: calc(16px + 0.390625vh);
   }
   body {
     margin: 0;
@@ -235,13 +235,13 @@
 
     #title-part-one {
       /* Applies to "Get to Know Canada's" */
-      font-size: 1.75rem;
+      font-size: calc((12px + 0.390625vh) * 1.5);
       font-weight: 400;
     }
 
     #title-part-two h1 {
       /* Applies to text "Algorithmic Impact Assessment". */
-      font-size: 3rem;
+      font-size: calc((12px + 0.390625vh) * 3);
       line-height: 1em;
       text-transform: uppercase;
       font-family: "myriad-pro", Helvetica, sans-serif;
@@ -291,8 +291,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 30px;
-      height: 30px;
+      width: 48px;
+      height: 48px;
       cursor: pointer;
       position: fixed;
       top: 5%;
