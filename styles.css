@@ -444,21 +444,21 @@
       max-width: 80%;
       text-align: justify;
     }
-    .procedure-list {
+    .process-list {
       counter-reset: descriptive;
     }
-    .procedure-description {
+    .process-description {
       padding-left: 1em;
     }
-    .procedure-description ol li {
+    .process-description ol li {
       counter-increment: descriptive;
       font-weight: bold;
       padding-top: 1em;
     }
-   .procedure-description ol li:before {
+   .process-description ol li:before {
       content: counters(descriptive, '.', decimal) '. ';
     }
-    .procedure-description p, .procedure-description ul { /* applies to all child elements */
+    .process-description p, .process-description ul { /* applies to all child elements */
       margin-left: 1.25em;
       margin-top: 0;
       margin-bottom: 0;
@@ -466,14 +466,14 @@
       max-width: 80%;
       text-align: justify;
     }
-    .procedure-description p {
+    .process-description p {
       max-width: 80%;
       padding-bottom: .15em;
     }
-    .procedure-description ul {
+    .process-description ul {
       max-width: 70%;
     }
-    .procedure-description ol {
+    .process-description ol {
       padding-left: 0!important;
       margin-bottom: 0;
       margin-top: 0;
