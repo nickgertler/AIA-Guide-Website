@@ -1233,6 +1233,13 @@
     </section>
   </div>
   <script src="script.js"></script>
+  <!-- Hit counter from countapi.xyz -->
+  <script>
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/aia.guide/testing-env?callback=cb"></script>
 </body>
 
 </html>
