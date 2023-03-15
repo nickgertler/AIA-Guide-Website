@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 5%;
   font-family: "myriad-pro-semi-condensed", Helvetica, sans-serif;
 }
 
@@ -346,7 +347,7 @@ hr {
   padding-top: 3em;
   padding-bottom: 3em;
   padding-right: 2em;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .menu-content li {
   font-size: 1.05rem;
@@ -354,7 +355,7 @@ hr {
 }
 .menu-content h4 {
   text-decoration: none;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .menu--open {
   transform: translateX(0);
@@ -553,6 +554,41 @@ table {
 .end-box p{
   font-size: 1.15em;
 }
+.about-card {
+  display: grid;
+  grid-template-columns: .25fr 1fr;
+  grid-gap: 1em;
+  justify-items: start;
+  align-items: center;
+}
+
+.about-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.about-bio {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+@media (max-width: 600px), (orientation: portrait), (pointer: coarse) {
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+  .about-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+  .about-bio {
+    grid-column: 1!important;
+    grid-row: 2!important;
+  }
+}
 
 /*|| Mobile styles */
 /* Tablet size
@@ -620,5 +656,3 @@ table {
     display: none;
   }
 }
-
-

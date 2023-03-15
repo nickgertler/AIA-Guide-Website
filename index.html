@@ -54,60 +54,60 @@
           <h4>Table of Contents</h4>
           <ol>
             <li><a href="#platform">Platform</a>
-
               <ol>
                 <li><a href="#github">GitHub</a>
-
                   <ol>
                     <li><a href="#frameworks">Languages and Frameworks</a></li>
                     <li><a href="#changes">Making Changes</a></li>
-                  </ol>
-                </li>
+                  </ol></li>
                 <li><a href="#walkthrough">Walkthrough</a>
-
                   <ol>
                     <li><a href="#context">Context and Landing Pages</a></li>
                     <li><a href="#sections">Sections</a></li>
                     <li><a href="#scoring">Scoring</a></li>
                     <li><a href="#inputs">Questions and Input Types</a></li>
                     <li><a href="#import">Import/Export</a></li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
+                  </ol></li>
+              </ol></li>
             <li><a href="#policy">Policy</a>
-
               <ol>
                 <li><a href="#diradm">Directive on Automated Decision-Making</a>
-
                   <ol>
-                    <li><a href="#definition">Defining "ADM"</a></li>
+                    <li><a href="#definition">Defining “ADM”</a></li>
                     <li><a href="#consultations">Coming Into Force and Consultations</a></li>
                     <li><a href="#admin-law">Principles of Administrative Law</a></li>
-                  </ol>
-                </li>
+                  </ol></li>
                 <li><a href="#process">Process</a>
-
                   <ol>
-                    <li><a href="#gen-process">General Process</a></li>
-                    <li><a href="#scope">Scope of the Directive</a></li>
+                    <li><a href="#gen-procedure">General Procedure</a></li>
                     <li><a href="#design">Design Stage</a></li>
                     <li><a href="#implementation">Implementation Stage</a></li>
                     <li><a href="post-implementation">Post-Implementation Stage</a></li>
-                  </ol>
-                </li>
+                    <li><a href="#scope">Scope of the Directive</a></li>
+                  </ol></li>
                 <li><a href="#questionnaire">AIA Questionnaire</a>
-
                   <ol>
+                    <li><a href="#overview">Questionnaire Overview</a></li>
                     <li><a href="#main-scores">Impact and Mitigation Scores</a></li>
                     <li><a href="#current-score">Calculating Current Score</a></li>
                     <li><a href="#risk">Risk Section Overview</a></li>
                     <li><a href="#mitigation">Mitigation Section Overview</a></li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li><a href="#function">Function</a></li>
+                  </ol></li>
+              </ol></li>
+            <li><a href="#function">Function</a>
+              <ol>
+                <li><a href="#why">Why It Matters</a></li>
+                <li><a href="#official">Official Functions</a>
+                  <ol>
+                    <li><a href="#problem">Defining the Problem Statement</a></li>
+                    <li><a href="#nudge">Nudge Function</a></li>
+                    <li><a href="#enforcement">Enforcement Function</a></li>
+                    <li><a href="#accountability">Accountability Function</a></li>
+                    <li><a href="#conflicts">A Note on Conflicting Functions</a></li>
+                  </ol></li>
+                <li><a href="#potential">Potential Functions and Future Directions</a></li>
+              </ol></li>
+            <li><a href="#acknowledgments">Acknowledgments</a></li>
           </ol>
         </div>
         <div class="menu__close" alt="Close the menu"><a href="#">X</a></div>
@@ -712,8 +712,8 @@
       <div class="intermittent-list-counter">
         <div class="grid">
           <div class="column1">
-            <h4 id="gen-process">General Process</h4>
-            <p style="margin-bottom: -1em;">The basic process laid out in the Directive is:</p>
+            <h4 id="gen-procedure">General Procedure</h4>
+            <p style="margin-bottom: -1em;">This is the the general procedure for using the AIA, as laid out in the Directive. This procedure is repeated during both the design and implementation stages.</p>
             <div class="intermittent-list">
               <ol>
                 <li>Fill out an AIA</li>
@@ -781,7 +781,7 @@
               <ol>
                 <li>Implement requirements</li>
               </ol>
-              <p>The final step of the process is, of course, to actually implement the Directive’s requirements. This
+              <p>The final step of the procedure is, of course, to actually implement the Directive’s requirements. This
                 includes specific requirements based on the system’s impact level, as well as several baseline
                 requirements for all systems.</p>
               <br>
@@ -804,29 +804,9 @@
       <div class="grid">
         <div class="column1">
           <br>
-          <h4 id="scope">Scope of the Directive?</h4>
-
-          <p>Before applying any of the Directive’s processes and requirements, public servants need to determine if
-            the system in question is in scope of the Directive to begin with.</p>
-          <div class="inline-list">
-            <p>Broadly speaking, the Directive applies to "any system, tool, or statistical models used to recommend or
-              make an administrative decision about a client."(<a
-                href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#cha5"> § 5.2</a>) But there are additional
-              limitations to the Directive’s scope:</p>
-            <ul>
-              <li>The Directive currently only applies to external-facing systems. ADM systems that are only used
-                internally by the government, for the government, are currently exempt.</li>
-              <li>The Directive doesn’t apply to "national security systems.&quot;</li>
-              <li>The Directive doesn’t apply to systems that aren’t in production, like systems operating in test
-                environments.</li>
-              <li>The Directive only applies to systems developed or procured after the Directive came into force on
-                April 1, 2020.</li>
-            </ul>
-          </div>
-          <br>
           <h4 id="design">Design Stage</h4>
 
-          <p>The first application of the Directive’s process begins in the design stage of a project. Once the scope
+          <p>The first application of the Directive’s procedure begins in the design stage of a project. Once the scope
             and general design of the system are established, an initial AIA needs to be completed before the system
             goes into production.</p>
 
@@ -839,10 +819,10 @@
               peer review—need to take place before the system goes live. While others—like having a
               human-in-the-loop—may need to be planned for and built into the system itself.</li>
           </ol>
-
+          <br>
           <h4 id="implementation">Implementation Stage</h4>
 
-          <p>The Directive’s process is applied for a second time after the system is built, but before it goes live.
+          <p>The Directive’s procedure is applied for a second time after the system is built, but before it goes live.
             Assuming that no major changes have been made to the system, it is unlikely that any new requirements will
             be introduced during the implementation stage. Instead, the AIA is completed again to validate the
             design-stage AIA and to reflect any changes to the system during the development process.</p>
@@ -858,16 +838,35 @@
 
           <p>The AIA may also need to be updated after the system goes live. Any time that the system’s functionality
             substantially changes, or the scope of the automated decision changes, the AIA needs to be updated.</p>
+          <h4 id="scope">Scope of the Directive?</h4>
+
+          <p>Before applying any of the Directive’s processes and requirements, public servants need to determine if
+            the system in question is in scope of the Directive to begin with.</p>
+          <div class="inline-list">
+            <p>Broadly speaking, the Directive applies to "any system, tool, or statistical models used to recommend or
+              make an administrative decision about a client."(<a
+                href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#cha5">§5.2</a>) But there are additional
+              limitations to the Directive’s scope:</p>
+            <ul>
+              <li>The Directive currently only applies to external-facing systems. ADM systems that are only used
+                internally by the government, for the government, are currently exempt.</li>
+              <li>The Directive doesn’t apply to "national security systems.&quot;</li>
+              <li>The Directive doesn’t apply to systems that aren’t in production, like systems operating in test
+                environments.</li>
+              <li>The Directive only applies to systems developed or procured after the Directive came into force on
+                April 1, 2020.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr class="small-line column1" />
       <div class="grid">
         <div class="column1">
           <h3 id="questionnaire">AIA Questionnaire</h3>
-          <p>The Directive on Automated Decision-Making provides a framework and process for regulating ADMs in the
-            government of Canada. But as we now know, that process relies heavily on "impact levels" established by
+          <p>The Directive on Automated Decision-Making provides a framework and procedure for regulating ADMs in the
+            government of Canada. But as we now know, that procedure relies heavily on "impact levels" established by
             the AIA. So what is the AIA actually assessing, and how are the Directive’s impact levels determined?</p>
-          <h4>Questionnaire Overview</h4>
+          <h4 id="overview">Questionnaire Overview</h4>
           <p>We can break down the AIA questionnaire itself into two sections—risk and mitigation. Each section has
             several sub-sections, and each sub-section contains one or more questions to which the applicant must
             provide a response.</p>
@@ -1031,7 +1030,7 @@
           <h3 id="official">Official Functions</h3>
           <p>There are at least 3 ways that we can think about Canada’s AIA “functioning” in the context the Directive
             on Automated Decision-Making.</p>
-          <h4>Defining the Problem Statement</h4>
+          <h4 id="problem">Defining the Problem Statement</h4>
           <p>Before considering how the AIA functions to achieve a particular goal, we need to define what that goal is.
           </p>
           <p><a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#cha4">Section 4</a> of Directive on
@@ -1048,7 +1047,7 @@
       </div>
       <div class="grid">
         <div class="column1">
-          <h4>Nudge Function</h4>
+          <h4 id="nudge">Nudge Function</h4>
           <p>Going sequentially, the first way that the AIA can function is by acting as a “nudge” and encouraging best
             practices (whatever those may be in a given context). In the Government of Canada’s implementation of the
             AIA, this largely occurs during the <a href="#design">design stage</a>. The design stage is where the most
@@ -1101,7 +1100,7 @@
       <div class="grid">
         <div class="column1">
           <br class="mobile-hide">
-          <h4>Enforcement Function</h4>
+          <h4 id="enforcement">Enforcement Function</h4>
 
           <p>The second way that the AIA can function is by acting as a measurement tool, which informs formal and
             enforceable requirements. In the Government of Canada’s implementation of the AIA platform, this is the
@@ -1132,7 +1131,7 @@
       </div>
       <div class="grid">
         <div class="column1">
-          <h4>Accountability Function</h4>
+          <h4 id="accountability">Accountability Function</h4>
           <div class="inline-list">
             <p>The third way that the AIA can function is as an object that serves as a focal point for discussion and
               critique of
@@ -1169,7 +1168,7 @@
       <div class="grid">
         <div class="column1">
           <br class="mobile-hide">
-          <h4>A Note on Conflicting Functions</h4>
+          <h4 id="conflicts">A Note on Conflicting Functions</h4>
           <p>The mechanisms which contribute to the enforcement and accountability functions also draw attention to how
             different functions can conflict with each other.
             <br>
@@ -1182,7 +1181,7 @@
       </div>
       <div class="grid">
         <div class="column1">
-          <h3>Potential Functions</h3>
+          <h3 id="potential">Potential Functions and Future Directions</h3>
           <p>In the context of the Directive on Automated Decision-Making, the AIA functions in these three ways:
             nudges, enforcement, and accountability. But there are other ways that we can imagine the AIA functioning.
           </p>
@@ -1211,11 +1210,21 @@
         <h2>Acknowledgments</h2>
       </div>
       <div class="grid">
+        <div class="column1 bounding-box info-box">
+          <h4>About the Author</h4>
+          <div class="about-card">
+            <div class="about-image">
+              <img src="assets/nog_portrait.png" alt="Drawing of Nick Gertler.">
+            </div>
+            <div class="about-bio">
+              <p><a href="https://aia.guide">Nick Gertler</a> is a graduate student at Concordia University whose work focuses on the policy and politics of AI in Canada. His thesis research focuses on algorithmic impact assessments and community-led AI governance. He is a member of the <a href="https://machineagencies.milieux.ca">Machine Agencies</a> working group at the <a href="https://milieux.concordia.ca">Milieux Institute</a>.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="small-line column1">
         <div class="column1">
-
-
-
-
+          <p>This guide was developed in collaboration with the <a href="">Media Governance After AI</a> project.</p>
+          <p>This guide draws on research supported by the <a href="https://www.sshrc-crsh.gc.ca">Social Sciences and Humanities Research Council</a>.</p>
         </div>
       </div>
     </section>
