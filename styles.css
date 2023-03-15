@@ -390,7 +390,7 @@ hr {
   cursor: pointer;
   position: fixed;
   top: 5%;
-  right: 5%;
+  right: 2.5%;
   z-index: 998;
   opacity: 100;
 }
@@ -530,6 +530,26 @@ hr {
     width: calc(100px + 5em);
     box-shadow: -8px 4px 10px -10px rgba(0, 0, 0, 0.39);
   }
+  .demo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    column-gap: 1em;
+    max-width: 100%;
+  }
+  .demo1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .demo2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .demo3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
   .inline-list p {
     margin-bottom: 0;
   }
@@ -558,7 +578,6 @@ hr {
   }
   .intermittent-list p,
   .intermittent-list ul {
-    /* applies to all child elements */
     margin-left: 1.25em;
     margin-top: 0;
     margin-bottom: 0;
@@ -578,6 +597,20 @@ hr {
     margin-bottom: 0;
     margin-top: 0;
   }
+  .input-list ul li {
+    font-weight: bold;
+    padding-top: .5em;
+  }
+  .input-list p{
+    max-width: 80%;
+    padding-bottom: 0.15em;
+    margin-left: 1.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 80%;
+    text-align: justify;
+  }
+
   table {
     table-layout: fixed;
     width: 100%;
@@ -674,7 +707,6 @@ hr {
     }
   }
 
-
 /*|| Mobile styles */
 /* Tablet size
     @media (min-width: 480px) and (max-width: 620px) {
@@ -732,6 +764,9 @@ hr {
     max-width: 100%;
     min-width: fit-content;
     width: 100%;
+  }
+  .demo-grid {
+    column-gap: 0px;
   }
   blockquote {
     text-align: left;
