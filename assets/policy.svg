@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #0061a6;
+        fill: #0062a7;
       }
 
       .cls-2 {
@@ -13,7 +13,7 @@
 
       .cls-2, .cls-3 {
         fill: none;
-        stroke: #0061a6;
+        stroke: #0062a7;
       }
 
       .cls-3 {
@@ -24,7 +24,7 @@
     </style>
   </defs>
   <g id="Outlines">
-    <g id="Policy">
+    <g id="policy">
       <rect class="cls-2" x="6.5" y="6.5" width="273.88" height="273.88"/>
       <g>
         <path class="cls-3" d="M209.81,74.99H114.29m-55.84,35.88v-35.88h39.98m130.02,.49v61.32H114.29m-55.84-8.74v8.74h39.98"/>

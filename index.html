@@ -12,6 +12,7 @@
   <meta property="og:description" content="Learn more about Canada’s open-source Algorithmic Impact Assessment—or AIA.">
   <meta property="og:site_name" content="aia.guide">
   <meta name="twitter:image:alt" content="Get to Know Canada's Algorithmic Impact Assessment.">
+  <meta name="title" content="Get to Know Canada's AIA">
   <meta name="description" content="Learn more about Canada’s open-source Algorithmic Impact Assessment—or AIA.">
   <!-- End of meta tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,7 +107,7 @@
                 </li>
               </ol>
             </li>
-            <li><a href="#procedures">Procedures</a></li>
+            <li><a href="#function">Function</a></li>
           </ol>
         </div>
         <div class="menu__close" alt="Close the menu"><a href="#">X</a></div>
@@ -160,8 +161,8 @@
           <a href="#policy" class="welcome-policy welcome-button">
             <img src="assets/policy.svg" alt="Icon depicting a text input field. The text below says 'Policy'" />
           </a>
-          <a href="#procedures" class="welcome-procedures welcome-button">
-            <img src="assets/procedures.svg" alt="Icon depicting a checkbox input. The text below says 'Procedures'" />
+          <a href="#function" class="welcome-function welcome-button">
+            <img src="assets/function.svg" alt="Icon depicting a checkbox input. The text below says 'Function'" />
           </a>
         </div>
       </div>
@@ -708,12 +709,12 @@
             procedure.</p>
         </div>
       </div>
-      <div class="procedure-list">
+      <div class="intermittent-list-counter">
         <div class="grid">
           <div class="column1">
             <h4 id="gen-procedure">General Procedure</h4>
             <p style="margin-bottom: -1em;">The basic process laid out in the Directive is:</p>
-            <div class="procedure-description">
+            <div class="intermittent-list">
               <ol>
                 <li>Fill out an AIA</li>
                 <li>Determine the impact level</li>
@@ -750,7 +751,7 @@
         </div>
         <div class="grid">
           <div class="column1">
-            <div class="procedure-description">
+            <div class="intermittent-list">
               <ol>
                 <li>Determine impact level requirements</li>
               </ol>
@@ -785,7 +786,7 @@
                 requirements for all systems.</p>
               <br>
               <p>This step changes the most depending on what stage in the development process the system is at (more on
-                that in a second). As we discuss in the <a href="#procedures">Procedures section</a>, one of the ways that
+                that in a second). As we discuss in the <a href="#function">Function section</a>, one of the ways that
                 the AIA can function is by encouraging best practices and de-risking a system. If a team doesn’t want to
                 comply with a requirement, they can try to modify the system to lower its impact level instead.</p>
             </div>
@@ -1001,15 +1002,220 @@
       </div>
     </section>
     <hr class="section-divider" />
-    <section id="procedures" class="section">
+    <section id="function" class="section">
       <div class="section-header">
         <img src="assets/checkboxes.svg" alt="Icon depicting a checkbox input field" />
-        <h2>Procedures</h2>
+        <h2>Function</h2>
       </div>
       <div class="grid">
         <div class="column1">
-          <p>One way we can approach Canada’s AIA is by thinking about it’s "procedures." How does the AIA contribute to
-            or help achieve a given goal? What are the mechanisms by which the AIA affects change?</p>
+          <p>One way we can approach Canada’s AIA is by thinking about it’s “functions.” What are the mechanisms by
+            which the AIA affects change? How do different mechanisms affect the design, audience, and use of the AIA?
+            How does the AIA contribute to or help achieve a given goal?</p>
+          <h3 class="why">Why It Matters</h3>
+          <p>In this context, we can think about “functions” like a hypothesis; a theory of causation, and way of
+            thinking about both what we’re trying to achieve and (crucially) how we expect to achieve it. If our goal is
+            to make sure that AI systems are trustworthy, and we’ve decided to use an AIA, how do we expect the AIA to
+            help achieve that goal?</p>
+          <p>The answer is less straightforward than it might seem. There are at least 5 different ways that Canada’s
+            AIA can function within a given context. And as we’ll see in a moment, even a relatively straightforward
+            example—like an AIA in the context of the Directive on Automated Decision-Making—can function in several
+            different ways at the same time.</p>
+          <div class="inline-list">
+            <p>Having a clear understanding of <em>how</em> we expect the AIA to work is important for two reasons:</p>
+            <ol>
+              <li>It gives us a way to measure the system’s success. (A key performance indicator, if you will.)</li>
+              <li>It gives us a framework for suggesting, designing, and evaluating changes and new features.</li>
+            </ol>
+          </div>
+          <h3 id="official">Official Functions</h3>
+          <p>There are at least 3 ways that we can think about Canada’s AIA “functioning” in the context the Directive
+            on Automated Decision-Making.</p>
+          <h4>Defining the Problem Statement</h4>
+          <p>Before considering how the AIA functions to achieve a particular goal, we need to define what that goal is.
+          </p>
+          <p><a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592#cha4">Section 4</a> of Directive on
+            Automated Decision-Making provides quite a clear objective for the policy. It states:</p>
+          <blockquote>
+            <p>The objective of this Directive is to ensure that Automated Decision Systems are deployed in a manner
+              that reduces risks to Canadians and federal institutions, and leads to more efficient, accurate,
+              consistent, and interpretable decisions made pursuant to Canadian law.</p>
+          </blockquote>
+          <p>Put more concisely, we can say that the stated goal of the Directive (and by extension the government’s use
+            of the AIA) is to ensure safe, fair, and responsible use of ADMs. How, then, does the AIA help achieve this
+            goal?</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h4>Nudge Function</h4>
+          <p>Going sequentially, the first way that the AIA can function is by acting as a “nudge” and encouraging best
+            practices (whatever those may be in a given context). In the Government of Canada’s implementation of the
+            AIA, this largely occurs during the <a href="#design">design stage</a>. The design stage is where the most
+            substantial changes to the system can be made, and it’s also the first time in a project’s lifecycle that
+            the AIA is used.</p>
+          <div class="inline-list">
+            <p>This function occurs in two ways:</p>
+            <div class="intermittent-list intermittent-list-counter">
+              <ol>
+                <li style="padding-top: 0em;">Encouraging consultation</li>
+              </ol>
+              <p>The Government of Canada’s AIA questionnaire is intentionally designed to require consultation outside
+                of the group developing or implementing a particular ADM system. In some cases this is done overtly,
+                like the “consultations” sub-section which asks whether respondents “will be engaging with” either
+                internal or external stakeholders.</p>
+              <p>In other cases, the scope of knowledge required to respond to a question acts as a more subtle nudge.
+                The “about the data” sub-section of the questionnaire, for example, asks extremely specific technical
+                questions which effectively require discussions between policy makers and developers.</p>
+              <ol>
+                <li>Rewarding Best Practices</li>
+              </ol>
+              <p>The mitigation score in particular is designed to reward certain practices without making them
+                mandatory. Unlike the impact score, where every scored question adds to or detracts from the total, the
+                mitigation score only helps the final score if the system achieves 80% or more of the maximum possible
+                mitigation score. This creates a strong incentive to adopt not just one, but almost all of the practices
+                endorsed in the mitigation sub-section.</p>
+              <p>We could also likely consider the nudge effects of gamifying the AIA via the scoring system in general,
+                but that discussion is beyond the scope of this guide…</p>
+            </div>
+          </div>
+          <br>
+          <div class="inline-list">
+            <p>These cases share share two important features:</p>
+            <ol>
+              <li>In both cases, it is the <em>process</em> of filling out the AIA where the AIA performs its function.
+                The intended audience in this function are the respondents themselves.</li>
+              <li>In both cases, the AIA functions by nudging respondents towards certain actions, rather than
+                explicitly mandating them. Even when the nudges are extremely overt, they’re still voluntary.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>Fill-in the Blanks: Nudge Function</h4>
+          <p class="fill-in">
+            The AIA will <span id="goal" contenteditable="false">ensure safe, fair, and responsible use of ADMs</span>
+            by <span id="aia-function" contenteditable="false">promoting consultation and best practices</span>.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <br class="mobile-hide">
+          <h4>Enforcement Function</h4>
+
+          <p>The second way that the AIA can function is by acting as a measurement tool, which informs formal and
+            enforceable requirements. In the Government of Canada’s implementation of the AIA platform, this is the
+            primary purpose of the <a href="#main-scores">scoring system</a> and the corresponding impact levels in the
+            Directive.</p>
+          <p>In this case, the AIA almost acts like a contract. The respondent describes the system, and then the AIA
+            score determines which set of requirements (see: <a href="#gen-procedure">impact levels</a>) apply. After
+            the AIA is completed, it still functions as a reference for what standards should be enforced for a given
+            system. The AIA serves as an agreement between the respondent and an oversight body as to what standards the
+            system should be held to.</p>
+          <p>This function occurs after an AIA is completed, and it necessarily involves some kind of oversight or
+            regulatory body. Within the Directive on Automated Decision-Making, enforcement and non-compliance are
+            managed by the Treasury Board. Potential consequences and enforcement actions are determined by the Treasury
+            Board’s <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=17151#appC">Framework for the Management
+              of Compliance</a>.</p>
+        </div>
+        <div class="column2">
+          <br class="mobile-hide">
+          <div class="bounding-box info-box">
+            <h4>Fill-in the Blanks: Enforcement Function</h4>
+            <p class="fill-in">
+              The AIA will <span id="goal" contenteditable="false">ensure safe, fair, and responsible use of ADMs</span>
+              by <span id="aia-function" contenteditable="false">measuring risk and proportionally scaling
+                enforcement</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h4>Accountability Function</h4>
+          <div class="inline-list">
+            <p>The third way that the AIA can function is as an object that serves as a focal point for discussion and
+              critique of
+              the underlying ADM-system being assessed. This function is enabled by two features of the Government of
+              Canada’s AIA
+              system:</p>
+            <div class="intermittent-list intermittent-list-counter">
+              <ol>
+                <li>The fact that the system produces a PDF as an output</li>
+              </ol>
+              <p>By generating a PDF, the completed AIA becomes a “thing” in the world. We can imagine a version of
+                Canada’s AIA
+                which simply outputs a score rather than a document of the completed questionnaire. The “thing-ness” of
+                completed AIAs allows them to have effects after their completion.</p>
+              <ol>
+                <li>The fact that completed AIAs are published and public</li>
+              </ol>
+              <p>A “thing” isn’t very useful without someone to use it. The Directive requires implementation-stage AIAs
+                to be <a
+                  href="https://search.open.canada.ca/opendata/?collection=aia&amp;amp;page=1&amp;amp;sort=date_modified+desc">published</a>
+                on Canada’s <a href="https://open.canada.ca/">Open Government Portal</a>. And it’s the publication of
+                completed AIAs is what realizes the potential of the AIA’s output.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column2 bounding-box info-box">
+          <h4>Fill-in the Blanks: Accountability Function</h4>
+          <p class="fill-in">
+            The AIA will <span id="goal" contenteditable="false">ensure safe, fair, and responsible use of ADMs</span>
+            by <span id="aia-function" contenteditable="false">engaging and informing the public</span>.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <br class="mobile-hide">
+          <h4>A Note on Conflicting Functions</h4>
+          <p>The mechanisms which contribute to the enforcement and accountability functions also draw attention to how
+            different functions can conflict with each other.
+            <br>
+            <br>
+            Free-text fields in the AIA questionnaire are an important tool for accountability, but they don’t
+            contribute to the AIA’s score. If new questions and areas of inquiry are only added to the AIA as free-text
+            fields, they can’t contribute to the AIA’s enforcement function.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="column1">
+          <h3>Potential Functions</h3>
+          <p>In the context of the Directive on Automated Decision-Making, the AIA functions in these three ways:
+            nudges, enforcement, and accountability. But there are other ways that we can imagine the AIA functioning.
+          </p>
+          <p>For example, <a href="https://datasociety.net">Data &amp; Society’s</a> excellent <a
+              href="https://datasociety.net/library/assembling-accountability-algorithmic-impact-assessment-for-the-public-interest/">work
+              on AIAs</a> draws attention to distinction between “impacts” and “harms.” Impacts are what an AIA
+            measures, but harms are what is felt on the ground. Ideally, the relationship between impact and harm in an
+            AIA should be as close as possible, but that isn’t always the case. How, then, might we re-imagine or
+            repurpose Canada’s AIA to have a harm-reduction function?</p>
+          <p>We can also imagine a consultative function for Canada’s AIA. Could the AIA be used to engage publics at
+            the design stage? Or perhaps we could flip the script and allow publics to design questionnaires and
+            scoring sheets for policy makers to use?</p>
+        </div>
+        <div class="column1 bounding-box info-box end-box">
+          <h4>What functions can <em>you</em> imagine for Canada’s AIA?</h4>
+          <p class="fill-in">The AIA will <span id="goal" contenteditable="true" placeholder="(goal to achieve)"></span> by
+            <span id="aia-function" contenteditable="true" placeholder="(function)"></span>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="acknowledgments" class="section">
+      <div class="section-header">
+        <img src="assets/info.svg" alt="Icon with an 'i' in it, depicting an 'info' button." />
+        <h2>Acknowledgments</h2>
+      </div>
+      <div class="grid">
+        <div class="column1">
+
+
+
+
         </div>
       </div>
     </section>
