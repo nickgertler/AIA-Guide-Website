@@ -173,7 +173,7 @@
               <li><a href="#acknowledgments">Acknowledgments</a></li>
             </ol>
           </div>
-          <div class="menu__close" alt="Close the menu"><a href="#">X</a></div>
+          <div class="menu__close"><a href="#" alt="Close the menu">X</a></div>
         </div>
       </nav>
       <section id="welcome" class="section">
@@ -628,12 +628,13 @@
           <div class="column2">
             <br class="mobile-hide" />
             <div class="bounding-box info-box demo-box">
-              <label for="text-demo">
-                <h4>Free text!</h4>
+              <h4>Free text!</h4>
+              <label for="text-demo" style="display: none;">
+                Free text!
               </label>
               <textarea
-                id="story"
-                name="story"
+                id="text-demo"
+                name="text-demo"
                 rows="2"
                 cols="20"
                 placeholder="Try typing here"
@@ -1566,11 +1567,11 @@
             <h4>Fill-in the Blanks: Nudge Function</h4>
             <p class="fill-in">
               The AIA will
-              <span id="goal" contenteditable="false"
+              <span id="goal1" contenteditable="false"
                 >ensure safe, fair, and responsible use of ADMs</span
               >
               by
-              <span id="aia-function" contenteditable="false"
+              <span id="aia-function1" contenteditable="false"
                 >promoting consultation and best practices</span
               >.
             </p>
@@ -1618,11 +1619,11 @@
               <h4>Fill-in the Blanks: Enforcement Function</h4>
               <p class="fill-in">
                 The AIA will
-                <span id="goal" contenteditable="false"
+                <span id="goal2" contenteditable="false"
                   >ensure safe, fair, and responsible use of ADMs</span
                 >
                 by
-                <span id="aia-function" contenteditable="false"
+                <span id="aia-function2" contenteditable="false"
                   >measuring risk and proportionally scaling enforcement</span
                 >.
               </p>
@@ -1672,11 +1673,11 @@
             <h4>Fill-in the Blanks: Accountability Function</h4>
             <p class="fill-in">
               The AIA will
-              <span id="goal" contenteditable="false"
+              <span id="goal3" contenteditable="false"
                 >ensure safe, fair, and responsible use of ADMs</span
               >
               by
-              <span id="aia-function" contenteditable="false"
+              <span id="aia-function3" contenteditable="false"
                 >engaging and informing the public</span
               >.
             </p>
@@ -1736,13 +1737,13 @@
             <p class="fill-in">
               The AIA will
               <span
-                id="goal"
+                id="goal4"
                 contenteditable="true"
                 placeholder="(goal to achieve)"
               ></span>
               by
               <span
-                id="aia-function"
+                id="aia-function4"
                 contenteditable="true"
                 placeholder="(function)"
               ></span
