@@ -194,13 +194,13 @@ hr {
   height: fit-content;
 }
 .welcome-button {
-  width: 98%;
+  width: 50%;
   padding-top: 1%;
   padding-bottom: 1%;
   max-width: 400px;
 }
 .welcome-button:hover {
-  width: 100%;
+  width: 52%;
   padding-top: 0%;
   padding-bottom: 0%;
 }
@@ -232,7 +232,7 @@ hr {
   grid-row: 2;
 }
 .welcome-caption {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 .welcome-grid-caption {
@@ -249,12 +249,12 @@ hr {
     grid-template-rows: repeat(3, minmax(20px, 1fr));
     justify-items: center;
     align-items: center;
-    grid-column-gap: .5rem;
+    grid-column-gap: 0rem;
     grid-row-gap: 1rem;
     height: fit-content;
   }
   .welcome-button {
-    width: 100%;
+    width: 50%;
     padding-top: 0%;
     padding-bottom: 0%;
     max-width: none;
@@ -288,7 +288,7 @@ hr {
     margin-bottom: -1rem;
   }
   .welcome-caption {
-    font-size: clamp(12px, 1.5rem, 6vw);
+    font-size: clamp(12px, 1.2rem, 6vw);
     text-align: left;
   }
 }
