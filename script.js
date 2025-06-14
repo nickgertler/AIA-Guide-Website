@@ -1,3 +1,10 @@
+// Add .disclaimer-bar--closed to the disclaimer-bar to hide it
+const disclaimerClose = document.querySelector('.disclaimer__close');
+disclaimerClose.addEventListener('click', () => {
+  const disclaimerBar = document.querySelector('.disclaimer-bar');
+  disclaimerBar.classList.toggle('disclaimer-bar--closed');
+});
+
 /* Fade title section on scroll */
 // Get the title element
 // Targets the network-background DIV to allow for fixed-position scroll

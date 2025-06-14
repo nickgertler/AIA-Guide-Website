@@ -312,7 +312,7 @@ hr {
 .title-text {
   position: relative;
   padding-left: 5%;
-  padding-top: 15%;
+  padding-top: 30vh;
 }
 
 .title-text p {
@@ -440,6 +440,10 @@ hr {
 }
 .menu--open {
   transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
 .menu__close {
@@ -707,6 +711,54 @@ hr {
     }
   }
 
+  .disclaimer-bar {
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 999;
+    padding: 1em 1em 1em 2.5em;
+    position: absolute;
+    background-color: #efc94b;
+    box-shadow: -1px 3px 27px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -1px 3px 27px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px 3px 27px 2px rgba(0, 0, 0, 0.3);
+    z-index: 998;
+    box-shadow: -8px 6px 20px -10px rgba(0, 0, 0, 0.39);
+
+}
+  .disclaimer-bar--closed {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+  .disclaimer__close {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .disclaimer__close a {
+    text-decoration: none;
+    color: #000;
+  }
+  .disclaimer__close a:hover {
+    color: #000;
+    opacity: 0.6;
+  }
+  .disclaimer-body {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
 /*|| Mobile styles */
 /* Tablet size
     @media (min-width: 480px) and (max-width: 620px) {
@@ -728,8 +780,8 @@ hr {
     background-position: center left 70vw;
   }
   /*.title-text {
-        position: fixed;
-        padding-top: 15%;
+        position: absolute;
+        padding-top: 30vh;
       }
 
       #title-part-one {
